@@ -1,6 +1,13 @@
 .navi-wrapper {
   background-color: $topm-bg-color;
 }
+.navi-wrapper.fixed {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index:999;
+}
   .navi-wrapper .menu-main-navigation-container {
     @include outer-container;
   }
@@ -22,7 +29,7 @@
       background: darken($topm-bg-color, 10%);
     }
 
-      .navi-wrapper li.current-menu-item a, 
+      .navi-wrapper li.current-menu-item a,
       .navi-wrapper li.current_page_item a {
         font-style:italic;
       }

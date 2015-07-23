@@ -108,3 +108,29 @@ body.home .owl-carousel .owl-controls {
   .read-more-block .fa {
     margin-left: 5px;
   }
+
+body.single-post .page-title {
+  text-align: center;
+}
+
+body.single-post img {
+  height: auto;
+  max-width:100%;
+  margin-top: 20px;
+}
+
+
+body.single-post .wp-caption {
+  max-width: 100%;
+  height: auto;
+}
+  body.single-post .wp-caption img  {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+body.single-post .alignleft {
+  float:left;
+  margin: 1% 1% 1% 0;
+}
