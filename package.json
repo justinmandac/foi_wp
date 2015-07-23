@@ -1,0 +1,10 @@
+{
+  "name": "foi-proto-theme",
+  "version" : "0.1.0",
+  "devDependencies" : {
+    "grunt" :"~0.4.5",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-watch" : "latest",
+    "grunt-contrib-concat" : "latest"
+  }
+}

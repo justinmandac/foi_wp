@@ -1,0 +1,16 @@
+.footer-wrapper {
+  background-color: $footer-bg;
+  color: $footer-text-color;
+  padding: 1% 0 1% 0;
+  width: 100%;
+}
+  .footer-wrapper .footer-content {
+    @include outer-container;
+  }
+    .footer-content .left-block {
+      @include span-columns(7);
+    }
+
+    .footer-content .right-block {
+      @include span-columns(5);
+    }
