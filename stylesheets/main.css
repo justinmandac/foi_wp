@@ -526,9 +526,21 @@ body.single-post .wp-caption img {
 }
 
 /* line 133, ../_sass/components/_pages.scss */
+body.single-post .alignright {
+  float: right;
+  margin: 1% 0% 1% 1%;
+}
+
+/* line 138, ../_sass/components/_pages.scss */
 body.single-post .alignleft {
   float: left;
   margin: 1% 1% 1% 0;
+}
+
+/* line 143, ../_sass/components/_pages.scss */
+body.single-post .aligncenter {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* line 1, ../_sass/components/_footer.scss */
@@ -537,9 +549,10 @@ body.single-post .alignleft {
   color: #fff;
   padding: 1% 0 1% 0;
   width: 100%;
+  margin-top: 2%;
 }
 
-/* line 7, ../_sass/components/_footer.scss */
+/* line 8, ../_sass/components/_footer.scss */
 .footer-wrapper .footer-content {
   max-width: 68em;
   margin-left: auto;
@@ -552,7 +565,7 @@ body.single-post .alignleft {
   display: table;
 }
 
-/* line 10, ../_sass/components/_footer.scss */
+/* line 11, ../_sass/components/_footer.scss */
 .footer-content .left-block {
   float: left;
   display: block;
@@ -564,7 +577,7 @@ body.single-post .alignleft {
   margin-right: 0;
 }
 
-/* line 14, ../_sass/components/_footer.scss */
+/* line 15, ../_sass/components/_footer.scss */
 .footer-content .right-block {
   float: left;
   display: block;

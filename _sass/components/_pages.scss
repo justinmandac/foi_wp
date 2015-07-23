@@ -130,7 +130,17 @@ body.single-post .wp-caption {
     margin-top: 20px;
   }
 
+body.single-post .alignright {
+  float:right;
+  margin: 1% 0% 1% 1%;
+}
+
 body.single-post .alignleft {
   float:left;
   margin: 1% 1% 1% 0;
+}
+
+body.single-post .aligncenter {
+  margin: 0 auto;
+  text-align: center;
 }
