@@ -15,3 +15,13 @@
     .footer-content .right-block {
       @include span-columns(5);
     }
+  .bottom-menu {
+    position: relative;
+  }
+    .bottom-menu .menu li {
+      display: inline-block;
+    }
+    .bottom-menu .menu a {
+      color: #fff;
+      font-size: 1.2rem;
+    }
