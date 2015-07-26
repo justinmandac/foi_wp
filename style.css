@@ -282,7 +282,7 @@ p {
 }
 
 /* line 46, ../_sass/components/_headers.scss */
-.navi-wrapper li a[title="Congress Tracker"] {
+.navi-wrapper .menu a[title="Congress Tracker"] {
   font-weight: bolder;
 }
 
@@ -294,9 +294,10 @@ p {
 /* line 53, ../_sass/components/_headers.scss */
 .navi-wrapper .sub-menu > li {
   width: 100%;
+  padding: 0 27%;
 }
 
-/* line 56, ../_sass/components/_headers.scss */
+/* line 57, ../_sass/components/_headers.scss */
 .navi-wrapper li:hover > .sub-menu {
   display: block;
   position: absolute;
@@ -307,7 +308,7 @@ p {
   left: 0;
 }
 
-/* line 65, ../_sass/components/_headers.scss */
+/* line 66, ../_sass/components/_headers.scss */
 .page-header {
   max-width: 68em;
   margin-left: auto;
@@ -321,7 +322,7 @@ p {
   display: table;
 }
 
-/* line 69, ../_sass/components/_headers.scss */
+/* line 70, ../_sass/components/_headers.scss */
 .page-header .logo-wrapper {
   float: left;
   display: block;
@@ -333,12 +334,12 @@ p {
   margin-right: 0;
 }
 
-/* line 72, ../_sass/components/_headers.scss */
+/* line 73, ../_sass/components/_headers.scss */
 .page-header .logo-wrapper img {
   width: 40%;
 }
 
-/* line 75, ../_sass/components/_headers.scss */
+/* line 76, ../_sass/components/_headers.scss */
 .page-header .search-wrapper {
   float: left;
   display: block;
@@ -351,29 +352,29 @@ p {
   margin-right: 0;
 }
 
-/* line 79, ../_sass/components/_headers.scss */
+/* line 80, ../_sass/components/_headers.scss */
 .search-form {
   margin-top: 2%;
 }
 
-/* line 82, ../_sass/components/_headers.scss */
+/* line 83, ../_sass/components/_headers.scss */
 .search-form label {
   border: 2px #444 solid;
   padding: 1%;
 }
 
-/* line 87, ../_sass/components/_headers.scss */
+/* line 88, ../_sass/components/_headers.scss */
 .search-form input[type="search"] {
   border: none;
   padding: 0;
 }
 
-/* line 92, ../_sass/components/_headers.scss */
+/* line 93, ../_sass/components/_headers.scss */
 .search-form input[type="search"]:focus {
   outline: none;
 }
 
-/* line 96, ../_sass/components/_headers.scss */
+/* line 97, ../_sass/components/_headers.scss */
 .search-form button {
   background: none;
   border: none;
