@@ -8,7 +8,7 @@
   width: 100%;
   z-index:999;
 }
-  .navi-wrapper .menu-main-navigation-container {
+  .navi-wrapper > div {
     @include outer-container;
   }
   .navi-wrapper ul {
@@ -41,7 +41,7 @@
       font-family: $topm-font-family;
     }
 
-  .navi-wrapper li.menu-item-1761 {
+  .navi-wrapper li a[title="Congress Tracker"] {
     font-weight: bolder;
   }
 
