@@ -28,6 +28,52 @@ body.home .owl-carousel .owl-controls {
   bottom: 0;
 }
 
+.featurettes {
+  @include outer-container(100%);
+}
+  .featurette-item {
+    @include span-columns(6);
+
+    box-sizing: border-box;
+    padding: 2%;
+    text-align: center;
+  }
+
+
+  .featurette-item .featurette-title-sub a {
+    text-decoration: none;
+    color: #444;
+  }
+
+  .featurette-item .content {
+    margin-bottom: 5%;
+    padding: 0 5%;
+  }
+  .featurette-item .buttons {
+    @include outer-container;
+    margin: 1% 0;
+  }
+
+    .featurette-item .buttons div {
+      @include span-columns(6);
+      display: inline;
+      text-decoration: none;
+      background: $topm-bg-color;
+      border-radius: 5px;
+    }
+
+      .featurette-item .buttons .read-more {
+        @include span-columns(12);
+      }
+
+      .featurette-item .buttons .fa {
+        margin-right: 5px;
+      }
+      .featurette-item .buttons a {
+        text-decoration: none;
+        color: #fff;
+      }
+
 .category-title,
 .feed-link {
   display: inline-block;
@@ -113,6 +159,7 @@ body.single-post .page-title {
   text-align: center;
 }
 
+body.author .outer-wrapper img,
 body.single-post .post-content img {
   height: auto;
   max-width:100%;
@@ -120,11 +167,13 @@ body.single-post .post-content img {
 }
 
 
+body.author .wp-caption,
 body.single-post .wp-caption {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
+  body.author .wp-caption img,
   body.single-post .wp-caption img  {
     height: auto;
     max-width: 100%;
@@ -161,7 +210,7 @@ body.single-post .wp-caption {
     background-position: center center;
     position: relative;
   }
-    .post-header-image .page-title {
+    .post-header-image .page-title-wrapper {
       position: absolute;
       padding: 1% 0;
       bottom: 0;
@@ -171,5 +220,26 @@ body.single-post .wp-caption {
       background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)); /* For Opera 11.1 to 12.0 */
       background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)); /* For Firefox 3.6 to 15 */
       background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)); /* Standard syntax */
+
+    }
+
+    .page-title-wrapper .page-title {
       margin-bottom: 0;
     }
+
+    .author-wrapper {
+      text-align: center;
+    }
+
+.category-performance-tracker .view-tracker  {
+  text-align: center;
+  background-color: $topm-bg-color;
+  border-radius: 5px;
+}
+  .category-performance-tracker .view-tracker a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .category-performance-tracker .view-tracker .fa {
+    margin-right: 5px;
+  }

@@ -8,14 +8,15 @@
   width: 100%;
   z-index:999;
 }
+  .navi-wrapper .menu-ifoi-container,
   .navi-wrapper > div {
     @include outer-container;
   }
-  .navi-wrapper ul {
+  .navi-wrapper .menu {
     list-style: none;
     text-align: left;
   }
-    .navi-wrapper li {
+    .navi-wrapper .menu li {
       display: inline-block;
       margin: 0 0.5%;
       padding: .3% .5%;

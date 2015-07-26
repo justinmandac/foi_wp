@@ -21,7 +21,7 @@
       <header class="page-header">
         <div class="logo-wrapper">
           <div class="logo-content">
-              <img src="<?php echo get_template_directory_uri().'/images/logo.jpg' ?>" alt="">
+            <a href="<?php bloginfo('url'); ?>">  <img src="<?php echo get_template_directory_uri().'/images/logo.jpg' ?>" alt=""></a>
           </div>
         </div>
         <div class="search-wrapper">
