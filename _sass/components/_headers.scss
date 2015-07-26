@@ -46,13 +46,13 @@
       font-weight: bolder;
     }
 
-    .navi-wrapper li > ul {
+    .navi-wrapper .sub-menu {
       display: none;
     }
-      .navi-wrapper li > ul > li {
+      .navi-wrapper .sub-menu > li {
         width:100%;
       }
-    .navi-wrapper li:hover > ul {
+    .navi-wrapper li:hover > .sub-menu {
       display: block;
       position: absolute;
       z-index: 100;
