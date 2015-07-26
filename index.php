@@ -10,5 +10,19 @@
    <p>Sorry, no posts matched your criteria.</p>
    <?php endif; ?>
  <?php endif;?>
+ <div class="featurettes">
+   <div class="featurette-item">
+        content
+   </div>
+   <div class="featurette-item">
+     content
+   </div>
+   <div class="featurette-item">
+     content
+   </div>
+   <div class="featurette-item">
+     content
+   </div>
+ </div>
 </div>
 <?php get_footer(); ?>
