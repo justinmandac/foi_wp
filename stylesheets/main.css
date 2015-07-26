@@ -195,6 +195,7 @@ h6 {
 /* line 34, ../_sass/components/_typography.scss */
 p {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /* line 1, ../_sass/components/_headers.scss */
@@ -506,7 +507,7 @@ body.single-post .page-title {
 }
 
 /* line 116, ../_sass/components/_pages.scss */
-body.single-post img {
+body.single-post .post-content img {
   height: auto;
   max-width: 100%;
   margin-top: 20px;
@@ -516,31 +517,69 @@ body.single-post img {
 body.single-post .wp-caption {
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
-/* line 127, ../_sass/components/_pages.scss */
+/* line 128, ../_sass/components/_pages.scss */
 body.single-post .wp-caption img {
   height: auto;
   max-width: 100%;
   margin-top: 20px;
 }
 
-/* line 133, ../_sass/components/_pages.scss */
-body.single-post .alignright {
+/* line 134, ../_sass/components/_pages.scss */
+.wp-caption-text {
+  font-style: italic;
+  color: #444;
+}
+
+/* line 140, ../_sass/components/_pages.scss */
+.alignright {
   float: right;
-  margin: 1% 0% 1% 1%;
+  margin: 1% 0% 1% 1.5%;
 }
 
-/* line 138, ../_sass/components/_pages.scss */
-body.single-post .alignleft {
+/* line 145, ../_sass/components/_pages.scss */
+.alignleft {
   float: left;
-  margin: 1% 1% 1% 0;
+  margin: 1% 1.5% 1% 0;
 }
 
-/* line 143, ../_sass/components/_pages.scss */
-body.single-post .aligncenter {
+/* line 150, ../_sass/components/_pages.scss */
+.aligncenter {
   margin: 0 auto;
   text-align: center;
+}
+
+/* line 155, ../_sass/components/_pages.scss */
+.post-header {
+  margin-bottom: 22px;
+}
+
+/* line 158, ../_sass/components/_pages.scss */
+.post-header-image {
+  background-size: cover;
+  min-height: 320px;
+  background-position: center center;
+  position: relative;
+}
+
+/* line 164, ../_sass/components/_pages.scss */
+.post-header-image .page-title {
+  position: absolute;
+  padding: 1% 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Standard syntax */
+  margin-bottom: 0;
 }
 
 /* line 1, ../_sass/components/_footer.scss */
