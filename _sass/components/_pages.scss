@@ -159,6 +159,10 @@ body.single-post .page-title {
   text-align: center;
 }
 
+body.single-post p {
+  font-size: 1.4em;
+}
+
 body.author .outer-wrapper img,
 body.single-post .post-content img {
   height: auto;
@@ -183,7 +187,6 @@ body.single-post .wp-caption {
   .wp-caption-text {
     font-style: italic;
     color: #444;
-
   }
 
  .alignright {
