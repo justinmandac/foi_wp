@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="outer-wrapper">
  <?php if(is_home() || is_front_page()):?>
-   <?php //echo do_shortcode('[owl-carousel category="Home" items="1" autoPlay="true" autoHeight="true" ] ');?>
+   <?php echo do_shortcode('[owl-carousel category="Home" items="1" autoPlay="true" autoHeight="true" ] ');?>
    <div class="featurettes">
      <div class="featurette-item">
           <h4 class="featurette-title">Congress Tracker</h4>
