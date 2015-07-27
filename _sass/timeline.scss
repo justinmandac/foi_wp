@@ -1,0 +1,27 @@
+.intro-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  .heading-group {
+    padding: 2% 0;
+  }
+    .heading-group h1 {
+      font-size: 8rem;
+      margin: .4em 0;
+      background: rgba(0,0,0,0.8);
+      padding: 1%;
+      color: #fff;
+    }
+
+    .heading-group h1:first-child {
+      width: 18%;
+    }
+
+    .heading-group h1:nth-child(2) {
+      width: 87%;
+    }
+
+    .heading-group h1:last-child {
+      width: 37%;
+    }

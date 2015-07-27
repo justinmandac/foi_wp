@@ -8,6 +8,11 @@ add_action( 'init', 'register_main_menu' );
 function load_scripts() {
   wp_enqueue_script('jquery');
   wp_enqueue_script('app', get_stylesheet_directory_uri().'/js/app.js','','1.0.0',true);
+
+  if(is_page('timeline')) {
+    wp_enqueue_style( 'style-name', get_stylesheet_directory_uri().'/stylesheets/timeline.css' );
+  }
+
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
