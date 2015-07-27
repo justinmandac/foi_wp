@@ -99,3 +99,28 @@
       border: none;
       cursor: pointer;
     }
+
+.cat-header.congtrack {
+  min-height: 320px;
+  color: #fff;
+  margin-bottom: 1%;
+}
+  .cat-header.congtrack .content {
+    padding: 1.5% 0;
+  }
+    .cat-header.congtrack a {
+      color: inherit;
+    }
+
+  .cat-header.congtrack .latest {
+
+  }
+  .cat-header.congtrack .latest-title {
+      margin-bottom: 0;
+  }
+    .cat-header.congtrack .latest p {
+      font-size: 1.4em;
+    }
+    .cat-header.congtrack .latest-info {
+        padding: 0 0 1.2% 0;
+    }

@@ -5,14 +5,11 @@
   width: 100%;
   margin-top: 2%;
 }
-  .footer-wrapper .footer-content {
-    @include outer-container;
-  }
-    .footer-content .left-block {
+    .footer-content .container .left-block {
       @include span-columns(7);
     }
 
-    .footer-content .right-block {
+    .footer-content .container .right-block {
       @include span-columns(5);
     }
   .bottom-menu {

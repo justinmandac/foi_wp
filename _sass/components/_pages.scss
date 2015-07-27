@@ -3,12 +3,15 @@ body {
   position: relative;
 }
 
-.outer-wrapper {
+.container {
   @include outer-container(60%);
-  min-height: 100vh;
 }
-body.home .outer-wrapper {
-  @include outer-container(100%);
+  .container.full {
+    @include outer-container(100%);
+  }
+
+.outer-wrapper {
+  min-height: 100vh;
 }
 
 body.home .owl-carousel .item {
@@ -159,6 +162,7 @@ body.single-post .page-title {
   text-align: center;
 }
 
+body.page p, 
 body.single-post p {
   font-size: 1.4em;
 }
@@ -186,7 +190,7 @@ body.single-post .wp-caption {
 
   .wp-caption-text {
     font-style: italic;
-    color: #444;
+      color: #444;
   }
 
  .alignright {

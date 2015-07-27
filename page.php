@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<div class="outer-wrapper">
+<div class="outer-wrapper container">
 
     <h2 class="page-title"><?php wp_title(''); ?></h2>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
         <div class="post-wrapper">
           <div class="post-content">
-              
+
              <?php the_content(); ?>
           </div>
         </div>

@@ -1,5 +1,5 @@
     <footer class="footer-wrapper">
-      <div class="footer-content">
+      <div class="footer-content container">
             <div class="left-block">
               <p>
               </p>

@@ -24,7 +24,7 @@
 
         <?php endif;?>
       </div>
-    <div class="outer-wrapper">
+    <div class="outer-wrapper container">
         <div class="post-wrapper">
           <div class="post-content">
              <?php the_content(); ?>

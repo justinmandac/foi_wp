@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="outer-wrapper">
+<div class="outer-wrapper container">
 
     <h1 class="category-title"><?php wp_title(''); ?></h1>
     <h5 class="feed-link"><a href="#"><i class="fa fa-rss"></i></a></h5>
