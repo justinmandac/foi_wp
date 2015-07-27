@@ -42,12 +42,12 @@
            wp_reset_postdata();
         ?>
     </div>
-
+    <h3 class="view-tracker"><a href="http://i-foi.org"><i class="fa fa-tachometer"></i>View Congress Tracker</a></h3>
   </div>
 </div>
 <div class="outer-wrapper container">
 
-    <h3 class="view-tracker"><a href="http://i-foi.org"><i class="fa fa-tachometer"></i>View Congress Tracker</a></h3>
+
     <?php
       $_count = 0;
       if ( have_posts() ) :
@@ -57,7 +57,11 @@
         ?>
         <div class="post-wrapper">
           <div class="post-content">
-             <h2 class="post-title"><a href="<?php the_permalink() ?>" title="Permalink to <?php the_title_attribute();?>"><?php the_title(); ?></a></h2>
+             <h3 class="post-title">
+               <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title_attribute();?>">
+                 <?php the_title(); ?>
+               </a>
+             </h3>
              <div class="post-info">
                <span><i class="fa fa-clock-o"></i><?php the_time('F jS Y');?></span>
                <span><?php echo __('|');?></span>
