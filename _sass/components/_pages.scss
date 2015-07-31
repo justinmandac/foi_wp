@@ -173,6 +173,7 @@ body.single-post .page-title {
 body.page p,
 body.single-post p {
   font-size: 1.4em;
+  line-height: 1.2em;
 }
 
 body.author .outer-wrapper img,
@@ -255,6 +256,8 @@ body.single-post .wp-caption {
   .category-performance-tracker .view-tracker a {
     text-decoration: none;
     color: #fff;
+    width: 100%;
+    display: block;
   }
   .category-performance-tracker .view-tracker .fa {
     margin-right: 5px;

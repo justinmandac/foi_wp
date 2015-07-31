@@ -91,6 +91,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   src: url("fonts/quicksand-bold/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-bold/quicksand-bold-webfont.woff2") format("woff2"), url("fonts/quicksand-bold/quicksand-bold-webfont.woff") format("woff"), url("fonts/quicksand-bold/quicksand-bold-webfont.ttf") format("truetype"), url("fonts/quicksand-bold/quicksand-bold-webfont.svg#quicksand-bold") format("svg");
 }
+/* line 1, ../_sass/_overrides.scss */
+strong {
+  font-weight: bolder;
+}
+
+/* line 5, ../_sass/_overrides.scss */
+i, cite, em, var, address, dfn {
+  font-style: italic;
+}
+
+/* line 9, ../_sass/_overrides.scss */
+pre, xmp, plaintext, listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px;
+}
+
+/* line 16, ../_sass/_overrides.scss */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 21, ../_sass/_overrides.scss */
+tt, code, kbd, samp {
+  font-family: monospace;
+}
+
+/* line 25, ../_sass/_overrides.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 29, ../_sass/_overrides.scss */
+dd {
+  padding-left: 4%;
+}
+
 /*
   TOP-MENU
 */
@@ -746,9 +785,10 @@ body.single-post .page-title {
 body.page p,
 body.single-post p {
   font-size: 1.4em;
+  line-height: 1.2em;
 }
 
-/* line 178, ../_sass/components/_pages.scss */
+/* line 179, ../_sass/components/_pages.scss */
 body.author .outer-wrapper img,
 body.single-post .post-content img {
   height: auto;
@@ -756,7 +796,7 @@ body.single-post .post-content img {
   margin-top: 20px;
 }
 
-/* line 186, ../_sass/components/_pages.scss */
+/* line 187, ../_sass/components/_pages.scss */
 body.author .wp-caption,
 body.single-post .wp-caption {
   max-width: 100%;
@@ -764,7 +804,7 @@ body.single-post .wp-caption {
   margin-bottom: 10px;
 }
 
-/* line 192, ../_sass/components/_pages.scss */
+/* line 193, ../_sass/components/_pages.scss */
 body.author .wp-caption img,
 body.single-post .wp-caption img {
   height: auto;
@@ -772,37 +812,37 @@ body.single-post .wp-caption img {
   margin-top: 20px;
 }
 
-/* line 199, ../_sass/components/_pages.scss */
+/* line 200, ../_sass/components/_pages.scss */
 .wp-caption-text {
   font-style: italic;
   color: #444;
   font-size: 1.5rem !important;
 }
 
-/* line 205, ../_sass/components/_pages.scss */
+/* line 206, ../_sass/components/_pages.scss */
 .alignright {
   float: right;
   margin: 1% 0% 1% 1.5%;
 }
 
-/* line 210, ../_sass/components/_pages.scss */
+/* line 211, ../_sass/components/_pages.scss */
 .alignleft {
   float: left;
   margin: 1% 1.5% 1% 0;
 }
 
-/* line 215, ../_sass/components/_pages.scss */
+/* line 216, ../_sass/components/_pages.scss */
 .aligncenter {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 220, ../_sass/components/_pages.scss */
+/* line 221, ../_sass/components/_pages.scss */
 .post-header {
   margin-bottom: 22px;
 }
 
-/* line 223, ../_sass/components/_pages.scss */
+/* line 224, ../_sass/components/_pages.scss */
 .post-header-image {
   background-size: cover;
   min-height: 320px;
@@ -810,7 +850,7 @@ body.single-post .wp-caption img {
   position: relative;
 }
 
-/* line 229, ../_sass/components/_pages.scss */
+/* line 230, ../_sass/components/_pages.scss */
 .post-header-image .page-title-wrapper {
   position: absolute;
   padding: 1% 0;
@@ -827,30 +867,32 @@ body.single-post .wp-caption img {
   /* Standard syntax */
 }
 
-/* line 242, ../_sass/components/_pages.scss */
+/* line 243, ../_sass/components/_pages.scss */
 .page-title-wrapper .page-title {
   margin-bottom: 0;
 }
 
-/* line 246, ../_sass/components/_pages.scss */
+/* line 247, ../_sass/components/_pages.scss */
 .author-wrapper {
   text-align: center;
 }
 
-/* line 250, ../_sass/components/_pages.scss */
+/* line 251, ../_sass/components/_pages.scss */
 .category-performance-tracker .view-tracker {
   text-align: center;
   background-color: #cc3333;
   border-radius: 5px;
 }
 
-/* line 255, ../_sass/components/_pages.scss */
+/* line 256, ../_sass/components/_pages.scss */
 .category-performance-tracker .view-tracker a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
+  display: block;
 }
 
-/* line 259, ../_sass/components/_pages.scss */
+/* line 262, ../_sass/components/_pages.scss */
 .category-performance-tracker .view-tracker .fa {
   margin-right: 5px;
 }
