@@ -58,7 +58,6 @@
     }
 
     .navi-wrapper .sub-menu {
-      //display: none;
       position: absolute;
       z-index: 100;
       background-color: $topm-bg-color;
@@ -74,7 +73,6 @@
         padding: 0 27%;
       }
     .navi-wrapper li:hover > .sub-menu {
-      //display: block;
       opacity: 1;
       visibility: visible;
     }

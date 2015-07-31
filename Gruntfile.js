@@ -1,16 +1,16 @@
-module.exports = function(grunt){
+module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     compass: {
-      dev : {
-        options : {
+      dev: {
+        options: {
           config: 'config.rb'
         }
       }
     },
-    concat : {
-      dist : {
-        src: ['info.css','stylesheets/main.css', 'stylesheets/font-awesome.min.css'],
+    concat: {
+      dist: {
+        src: ['info.css', 'stylesheets/main.css', 'stylesheets/font-awesome.min.css'],
         dest: 'style.css'
       }
     }
@@ -20,6 +20,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['compass','concat']);
+  grunt.registerTask('default', ['compass', 'concat']);
 
 }
