@@ -1,3 +1,9 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+@import "variables";
+
+
 .intro-section {
   min-height: 100vh;
   background-size: cover;
@@ -25,3 +31,113 @@
     .heading-group h1:last-child {
       width: 37%;
     }
+
+
+.timeline-section {
+  position: relative;
+  padding-top: 4%;
+}
+  .timeline-section .menu-container {
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2.4em;
+  }
+
+.congress-heading {
+  text-align: center;
+}
+
+.congress-container {
+  position: relative;
+}
+
+  .timeline-line {
+    height: 100%;
+    width: $line_width;
+    background-color: #ccc;
+    position: absolute;
+    left: $line_offset;
+  }
+
+
+.timeline-item {
+  @include outer-container;
+  margin-bottom: 2%;
+}
+  .timeline-item .date-block,
+  .timeline-item .content-block {
+
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .timeline-item .dot-block {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+  }
+
+  @include direction-context(left-to-right) {
+    .timeline-item.left .date-block,
+    .timeline-item.right .content-block {
+        @include span-columns(6, block-collapse);
+    }
+
+    .timeline-item.right .content-block {
+      width: 51.17883%;
+    }
+  }
+
+  @include direction-context(right-to-left) {
+    .timeline-item.left .content-block,
+    .timeline-item.right .date-block {
+      @include span-columns(6, block-collapse);
+    }
+
+    .timeline-item.right .date-block {
+        width:  48.82117%;
+    }
+  }
+
+.timeline-item.left .date-block,
+.timeline-item.right .content-inner {
+  text-align: right;
+}
+
+.timeline-item.left .date-container {
+  margin-right: $component-distance;
+}
+
+.timeline-item.left .content-inner,
+.timeline-item.right .date-container {
+  margin-left: $component-distance;
+}
+
+
+.timeline-item.right .date-block {
+  text-align: left;
+}
+
+.timeline-item .content-inner .content {
+  background: $content_bg;
+  color: $content_font_color;
+  padding: 1.5%;
+}
+
+.timeline-item .dot {
+  width: $dot_dim;
+  height: $dot_dim;
+  border: $dot_border_dim $dot_border solid;
+  background-color: $dot_color;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor:pointer;
+}
+
+.timeline-item .date-container {
+  display: inline-block;
+  padding: 1%;
+  color: $date_font_color;
+  background-color: $date_bg;
+}
