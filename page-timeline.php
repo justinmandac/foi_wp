@@ -24,20 +24,18 @@
       <div class="menu-container">
           <i class="fa fa-bars"></i>
       </div>
-    <section class="congress-container">
+    <section id="congress_16" class="congress-container">
       <div class="timeline-line">
       </div>
       <ul class="timeline-events">
-        <li class="timeline-item left">
+        <li class="timeline-item left" data-date="4-27-2015">
           <div class="date-block">
             <div class="date-container">
               May 27, 2015
             </div>
           </div>
           <div class="dot-block">
-            <div class="dot">
-
-            </div>
+            <div class="dot"></div>
           </div>
           <div class="content-block">
             <div class="content-inner">

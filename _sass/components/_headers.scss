@@ -12,6 +12,12 @@
   .navi-wrapper > div {
     @include outer-container;
   }
+  .navi-wrapper .trigger {
+    display: none;
+    text-align: center;
+    cursor: pointer;
+    color: $topm-text-color;
+  }
   .navi-wrapper .menu {
     list-style: none;
     text-align: left;
@@ -21,6 +27,8 @@
       margin: 0 0.5%;
       padding: .3% .5%;
       position: relative;
+      min-width: 18%;
+      text-align: center;
     }
     .navi-wrapper li:hover {
       background: darken($topm-bg-color, 10%);
@@ -124,3 +132,32 @@
     .cat-header.congtrack .latest-info {
         padding: 0 0 1.2% 0;
     }
+
+/*
+  MEDIA QUERIES
+*/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px),
+screen and (min-width: 320px) and (max-width: 568px) {
+  .navi-wrapper .trigger {
+    display: block;
+  }
+
+  .navi-wrapper .menu {
+    display: none;
+  }
+
+  .navi-wrapper .menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .navi-wrapper .menu li:hover .sub-menu {
+    position:static;
+  }
+
+  .navi-wrapper .menu li.menu-item-has-children > a::after {
+    content: ">";
+    font-weight:bold;
+  }
+}

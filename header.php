@@ -16,6 +16,9 @@
   <body <?php body_class(); ?>>
     <div class="header-wrapper">
       <header class="navi-wrapper">
+        <div class="trigger">
+            <span><i class="fa fa-bars"></i>Menu</span>
+        </div>
         <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
       </header>
       <header class="page-header">
