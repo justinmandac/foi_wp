@@ -17,19 +17,22 @@ html {
 /*
   TIMELINE
 */
-/* line 6, ../_sass/timeline.scss */
+/*
+  CATEGORY PAGES
+*/
+/* line 7, ../_sass/timeline.scss */
 .intro-section {
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* line 11, ../_sass/timeline.scss */
+/* line 12, ../_sass/timeline.scss */
 .heading-group {
   padding: 2% 0;
 }
 
-/* line 14, ../_sass/timeline.scss */
+/* line 15, ../_sass/timeline.scss */
 .heading-group h1 {
   font-size: 8rem;
   margin: .4em 0;
@@ -38,28 +41,28 @@ html {
   color: #fff;
 }
 
-/* line 22, ../_sass/timeline.scss */
+/* line 23, ../_sass/timeline.scss */
 .heading-group h1:first-child {
   width: 18%;
 }
 
-/* line 26, ../_sass/timeline.scss */
+/* line 27, ../_sass/timeline.scss */
 .heading-group h1:nth-child(2) {
   width: 87%;
 }
 
-/* line 30, ../_sass/timeline.scss */
+/* line 31, ../_sass/timeline.scss */
 .heading-group h1:last-child {
   width: 37%;
 }
 
-/* line 34, ../_sass/timeline.scss */
+/* line 35, ../_sass/timeline.scss */
 .timeline-section {
   position: relative;
   padding-top: 4%;
 }
 
-/* line 38, ../_sass/timeline.scss */
+/* line 39, ../_sass/timeline.scss */
 .timeline-section .menu-container {
   position: absolute;
   top: 5%;
@@ -67,17 +70,17 @@ html {
   font-size: 2.4em;
 }
 
-/* line 45, ../_sass/timeline.scss */
+/* line 46, ../_sass/timeline.scss */
 .congress-heading {
   text-align: center;
 }
 
-/* line 49, ../_sass/timeline.scss */
+/* line 50, ../_sass/timeline.scss */
 .congress-container {
   position: relative;
 }
 
-/* line 53, ../_sass/timeline.scss */
+/* line 54, ../_sass/timeline.scss */
 .timeline-line {
   height: 100%;
   width: 6px;
@@ -86,7 +89,7 @@ html {
   left: 50.75%;
 }
 
-/* line 62, ../_sass/timeline.scss */
+/* line 63, ../_sass/timeline.scss */
 .timeline-item {
   max-width: 68em;
   margin-left: auto;
@@ -100,21 +103,21 @@ html {
   display: table;
 }
 
-/* line 66, ../_sass/timeline.scss */
+/* line 67, ../_sass/timeline.scss */
 .timeline-item .date-block,
 .timeline-item .content-block {
   position: relative;
   box-sizing: border-box;
 }
 
-/* line 72, ../_sass/timeline.scss */
+/* line 73, ../_sass/timeline.scss */
 .timeline-item .dot-block {
   position: absolute;
   text-align: center;
   left: 50%;
 }
 
-/* line 79, ../_sass/timeline.scss */
+/* line 80, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-block {
   float: left;
@@ -127,12 +130,12 @@ html {
   width: 48.82117%;
 }
 
-/* line 84, ../_sass/timeline.scss */
+/* line 85, ../_sass/timeline.scss */
 .timeline-item.right .content-block {
   width: 51.17883%;
 }
 
-/* line 90, ../_sass/timeline.scss */
+/* line 91, ../_sass/timeline.scss */
 .timeline-item.left .content-block,
 .timeline-item.right .date-block {
   float: right;
@@ -145,34 +148,34 @@ html {
   width: 48.82117%;
 }
 
-/* line 95, ../_sass/timeline.scss */
+/* line 96, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   width: 48.82117%;
 }
 
-/* line 100, ../_sass/timeline.scss */
+/* line 101, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-inner {
   text-align: right;
 }
 
-/* line 105, ../_sass/timeline.scss */
+/* line 106, ../_sass/timeline.scss */
 .timeline-item.left .date-container {
   margin-right: 5%;
 }
 
-/* line 109, ../_sass/timeline.scss */
+/* line 110, ../_sass/timeline.scss */
 .timeline-item.left .content-inner,
 .timeline-item.right .date-container {
   margin-left: 5%;
 }
 
-/* line 115, ../_sass/timeline.scss */
+/* line 116, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   text-align: left;
 }
 
-/* line 120, ../_sass/timeline.scss */
+/* line 121, ../_sass/timeline.scss */
 .timeline-item .content {
   background: #2052DA;
   color: #fff;
@@ -181,7 +184,7 @@ html {
   display: inline-block;
 }
 
-/* line 128, ../_sass/timeline.scss */
+/* line 129, ../_sass/timeline.scss */
 .timeline-item.right .arrow {
   width: 0;
   height: 0;
@@ -193,7 +196,7 @@ html {
   top: 0;
 }
 
-/* line 139, ../_sass/timeline.scss */
+/* line 140, ../_sass/timeline.scss */
 .timeline-item.left .arrow {
   width: 0;
   height: 0;
@@ -206,7 +209,7 @@ html {
   right: 95%;
 }
 
-/* line 151, ../_sass/timeline.scss */
+/* line 152, ../_sass/timeline.scss */
 .timeline-item .dot {
   width: 25px;
   height: 25px;
@@ -217,7 +220,7 @@ html {
   cursor: pointer;
 }
 
-/* line 161, ../_sass/timeline.scss */
+/* line 162, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;

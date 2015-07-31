@@ -1,0 +1,7 @@
+@mixin bp($type) {
+  @if $type == small {
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 569px) {
+      @content;
+    }
+  }
+}

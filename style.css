@@ -154,6 +154,9 @@ dd {
 /*
   TIMELINE
 */
+/*
+  CATEGORY PAGES
+*/
 /* line 1, ../_sass/components/_typography.scss */
 html {
   font-size: 62.5%;
@@ -479,31 +482,31 @@ p {
 /*
   MEDIA QUERIES
 */
-@media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 568px) {
-  /* line 153, ../_sass/components/_headers.scss */
+@media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 569px) {
+  /* line 152, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger {
     display: block;
   }
 
-  /* line 157, ../_sass/components/_headers.scss */
+  /* line 156, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger .fa {
     transition: all 0.5s;
     margin-right: 5px;
   }
 
-  /* line 162, ../_sass/components/_headers.scss */
+  /* line 161, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger.twist .fa {
     transform: rotate(90deg);
   }
 
-  /* line 166, ../_sass/components/_headers.scss */
+  /* line 165, ../_sass/components/_headers.scss */
   .navi-wrapper .menu.expand {
     opacity: 1;
     visibility: visible;
     max-height: 500px;
   }
 
-  /* line 173, ../_sass/components/_headers.scss */
+  /* line 172, ../_sass/components/_headers.scss */
   .navi-wrapper .menu {
     opacity: 0;
     visibility: hidden;
@@ -511,18 +514,18 @@ p {
     max-height: 0;
   }
 
-  /* line 180, ../_sass/components/_headers.scss */
+  /* line 179, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li {
     display: block;
     text-align: center;
   }
 
-  /* line 185, ../_sass/components/_headers.scss */
+  /* line 184, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li:hover .sub-menu {
     position: static;
   }
 
-  /* line 189, ../_sass/components/_headers.scss */
+  /* line 188, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li.menu-item-has-children > a::after {
     content: " >";
     font-weight: bold;

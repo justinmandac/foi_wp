@@ -119,7 +119,7 @@
     }
 
 .cat-header.congtrack {
-  min-height: 320px;
+  min-height: $cat-header-height;
   color: #fff;
   margin-bottom: 1%;
 }
@@ -147,8 +147,7 @@
   MEDIA QUERIES
 */
 
-@media screen and (min-device-width: 320px) and (max-device-width: 568px),
-screen and (min-width: 320px) and (max-width: 568px) {
+@include bp(small) {
 
   .navi-wrapper .trigger {
     display: block;
