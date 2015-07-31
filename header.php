@@ -21,14 +21,16 @@
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
       </header>
-      <header class="page-header">
-        <div class="logo-wrapper">
-          <div class="logo-content">
-            <a href="<?php bloginfo('url'); ?>">  <img src="<?php echo get_template_directory_uri().'/images/logo.jpg' ?>" alt=""></a>
-          </div>
-        </div>
+      <div class="page-header-wrapper">
+        <header class="page-header">
+          <div class="logo-wrapper">
+            <div class="logo-content">
+              <a href="<?php bloginfo('url'); ?>">  <img src="<?php echo get_template_directory_uri().'/images/logo.jpg' ?>" alt=""></a>
+            </div>
+          </div>        
         <div class="search-wrapper">
           <?php get_search_form(); ?>
         </div>
+      </div>
       </header>
     </div>

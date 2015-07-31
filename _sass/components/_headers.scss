@@ -71,9 +71,14 @@
       margin-top: 3px;
       left: 0;
     }
+
+.page-header-wrapper {
+  background-color: #fff;
+}
 .page-header {
   @include outer-container;
   padding: .5% 0;
+  background: #fff;
 }
   .page-header .logo-wrapper {
     @include span-columns(4);

@@ -14,6 +14,10 @@ body {
   min-height: 100vh;
 }
 
+body.home {
+  background-color: $footer-bg;
+}
+
 body.home .outer-wrapper {
   min-height: auto;
 }
