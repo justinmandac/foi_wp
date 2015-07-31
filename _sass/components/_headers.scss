@@ -30,6 +30,7 @@
       position: relative;
       min-width: 18%;
       text-align: center;
+      transition: 250ms ease;
     }
     .navi-wrapper li:hover {
       background: darken($topm-bg-color, 10%);
@@ -57,20 +58,25 @@
     }
 
     .navi-wrapper .sub-menu {
-      display: none;
-    }
-      .navi-wrapper .sub-menu > li {
-        width:100%;
-        padding: 0 27%;
-      }
-    .navi-wrapper li:hover > .sub-menu {
-      display: block;
+      //display: none;
       position: absolute;
       z-index: 100;
       background-color: $topm-bg-color;
       padding-top: 10px;
       margin-top: 3px;
       left: 0;
+      opacity: 0;
+      transition: 250ms ease;
+      visibility: hidden;
+    }
+      .navi-wrapper .sub-menu > li {
+        width:100%;
+        padding: 0 27%;
+      }
+    .navi-wrapper li:hover > .sub-menu {
+      //display: block;
+      opacity: 1;
+      visibility: visible;
     }
 
 .page-header-wrapper {
