@@ -1,5 +1,6 @@
 .navi-wrapper {
   background-color: $topm-bg-color;
+  position: relative;
 }
 .navi-wrapper.fixed {
   position: fixed;
@@ -144,12 +145,32 @@
 
 @media screen and (min-device-width: 320px) and (max-device-width: 568px),
 screen and (min-width: 320px) and (max-width: 568px) {
+
   .navi-wrapper .trigger {
     display: block;
   }
 
+  .navi-wrapper .trigger .fa {
+    transition: all 0.5s;
+    margin-right: 5px;
+  }
+
+  .navi-wrapper .trigger.twist .fa {
+    transform: rotate(90deg);
+  }
+
+  .navi-wrapper .menu.expand {
+    opacity: 1;
+    visibility:visible;
+
+    max-height: 500px;
+  }
+
   .navi-wrapper .menu {
-    display: none;
+    opacity: 0;
+    visibility:hidden;
+    transition: 200ms ease;
+    max-height: 0;
   }
 
   .navi-wrapper .menu li {
@@ -162,7 +183,7 @@ screen and (min-width: 320px) and (max-width: 568px) {
   }
 
   .navi-wrapper .menu li.menu-item-has-children > a::after {
-    content: ">";
+    content: " >";
     font-weight:bold;
   }
 }

@@ -204,9 +204,10 @@ p {
 /* line 1, ../_sass/components/_headers.scss */
 .navi-wrapper {
   background-color: #cc3333;
+  position: relative;
 }
 
-/* line 4, ../_sass/components/_headers.scss */
+/* line 5, ../_sass/components/_headers.scss */
 .navi-wrapper.fixed {
   position: fixed;
   top: 0;
@@ -215,7 +216,7 @@ p {
   z-index: 999;
 }
 
-/* line 11, ../_sass/components/_headers.scss */
+/* line 12, ../_sass/components/_headers.scss */
 .navi-wrapper .menu-ifoi-container,
 .navi-wrapper > div {
   max-width: 68em;
@@ -230,7 +231,7 @@ p {
   display: table;
 }
 
-/* line 15, ../_sass/components/_headers.scss */
+/* line 16, ../_sass/components/_headers.scss */
 .navi-wrapper .trigger {
   display: none;
   text-align: center;
@@ -238,13 +239,13 @@ p {
   color: #fff;
 }
 
-/* line 21, ../_sass/components/_headers.scss */
+/* line 22, ../_sass/components/_headers.scss */
 .navi-wrapper .menu {
   list-style: none;
   text-align: left;
 }
 
-/* line 25, ../_sass/components/_headers.scss */
+/* line 26, ../_sass/components/_headers.scss */
 .navi-wrapper .menu li {
   display: inline-block;
   margin: 0 0.5%;
@@ -254,24 +255,24 @@ p {
   text-align: center;
 }
 
-/* line 33, ../_sass/components/_headers.scss */
+/* line 34, ../_sass/components/_headers.scss */
 .navi-wrapper li:hover {
   background: #a32929;
 }
 
-/* line 37, ../_sass/components/_headers.scss */
+/* line 38, ../_sass/components/_headers.scss */
 .navi-wrapper li.current_page_item,
 .navi-wrapper li.current-menu-item {
   background: #a32929;
 }
 
-/* line 42, ../_sass/components/_headers.scss */
+/* line 43, ../_sass/components/_headers.scss */
 .navi-wrapper li.current-menu-item a,
 .navi-wrapper li.current_page_item a {
   font-style: italic;
 }
 
-/* line 47, ../_sass/components/_headers.scss */
+/* line 48, ../_sass/components/_headers.scss */
 .navi-wrapper a {
   text-transform: uppercase;
   text-decoration: none;
@@ -279,23 +280,23 @@ p {
   font-family: "quicksand-regular", "arial", "sans-serif";
 }
 
-/* line 54, ../_sass/components/_headers.scss */
+/* line 55, ../_sass/components/_headers.scss */
 .navi-wrapper .menu a[title="Performance Tracker"] {
   font-weight: bolder;
 }
 
-/* line 58, ../_sass/components/_headers.scss */
+/* line 59, ../_sass/components/_headers.scss */
 .navi-wrapper .sub-menu {
   display: none;
 }
 
-/* line 61, ../_sass/components/_headers.scss */
+/* line 62, ../_sass/components/_headers.scss */
 .navi-wrapper .sub-menu > li {
   width: 100%;
   padding: 0 27%;
 }
 
-/* line 65, ../_sass/components/_headers.scss */
+/* line 66, ../_sass/components/_headers.scss */
 .navi-wrapper li:hover > .sub-menu {
   display: block;
   position: absolute;
@@ -306,12 +307,12 @@ p {
   left: 0;
 }
 
-/* line 75, ../_sass/components/_headers.scss */
+/* line 76, ../_sass/components/_headers.scss */
 .page-header-wrapper {
   background-color: #fff;
 }
 
-/* line 78, ../_sass/components/_headers.scss */
+/* line 79, ../_sass/components/_headers.scss */
 .page-header {
   max-width: 68em;
   margin-left: auto;
@@ -326,7 +327,7 @@ p {
   display: table;
 }
 
-/* line 83, ../_sass/components/_headers.scss */
+/* line 84, ../_sass/components/_headers.scss */
 .page-header .logo-wrapper {
   float: left;
   display: block;
@@ -338,12 +339,12 @@ p {
   margin-right: 0;
 }
 
-/* line 86, ../_sass/components/_headers.scss */
+/* line 87, ../_sass/components/_headers.scss */
 .page-header .logo-wrapper img {
   width: 40%;
 }
 
-/* line 89, ../_sass/components/_headers.scss */
+/* line 90, ../_sass/components/_headers.scss */
 .page-header .search-wrapper {
   float: left;
   display: block;
@@ -356,63 +357,63 @@ p {
   margin-right: 0;
 }
 
-/* line 93, ../_sass/components/_headers.scss */
+/* line 94, ../_sass/components/_headers.scss */
 .search-form {
   margin-top: 2%;
 }
 
-/* line 96, ../_sass/components/_headers.scss */
+/* line 97, ../_sass/components/_headers.scss */
 .search-form label {
   border: 2px #444 solid;
   padding: 1%;
 }
 
-/* line 101, ../_sass/components/_headers.scss */
+/* line 102, ../_sass/components/_headers.scss */
 .search-form input[type="search"] {
   border: none;
   padding: 0;
 }
 
-/* line 106, ../_sass/components/_headers.scss */
+/* line 107, ../_sass/components/_headers.scss */
 .search-form input[type="search"]:focus {
   outline: none;
 }
 
-/* line 110, ../_sass/components/_headers.scss */
+/* line 111, ../_sass/components/_headers.scss */
 .search-form button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-/* line 116, ../_sass/components/_headers.scss */
+/* line 117, ../_sass/components/_headers.scss */
 .cat-header.congtrack {
   min-height: 320px;
   color: #fff;
   margin-bottom: 1%;
 }
 
-/* line 121, ../_sass/components/_headers.scss */
+/* line 122, ../_sass/components/_headers.scss */
 .cat-header.congtrack .content {
   padding: 1.5% 0;
 }
 
-/* line 124, ../_sass/components/_headers.scss */
+/* line 125, ../_sass/components/_headers.scss */
 .cat-header.congtrack a {
   color: inherit;
 }
 
-/* line 131, ../_sass/components/_headers.scss */
+/* line 132, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest-title {
   margin-bottom: 0;
 }
 
-/* line 134, ../_sass/components/_headers.scss */
+/* line 135, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest p {
   font-size: 1.4em;
 }
 
-/* line 137, ../_sass/components/_headers.scss */
+/* line 138, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest-info {
   padding: 0 0 1.2% 0;
 }
@@ -421,30 +422,51 @@ p {
   MEDIA QUERIES
 */
 @media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 568px) {
-  /* line 147, ../_sass/components/_headers.scss */
+  /* line 149, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger {
     display: block;
   }
 
-  /* line 151, ../_sass/components/_headers.scss */
-  .navi-wrapper .menu {
-    display: none;
+  /* line 153, ../_sass/components/_headers.scss */
+  .navi-wrapper .trigger .fa {
+    transition: all 0.5s;
+    margin-right: 5px;
   }
 
-  /* line 155, ../_sass/components/_headers.scss */
+  /* line 158, ../_sass/components/_headers.scss */
+  .navi-wrapper .trigger.twist .fa {
+    transform: rotate(90deg);
+  }
+
+  /* line 162, ../_sass/components/_headers.scss */
+  .navi-wrapper .menu.expand {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;
+  }
+
+  /* line 169, ../_sass/components/_headers.scss */
+  .navi-wrapper .menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease;
+    max-height: 0;
+  }
+
+  /* line 176, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li {
     display: block;
     text-align: center;
   }
 
-  /* line 160, ../_sass/components/_headers.scss */
+  /* line 181, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li:hover .sub-menu {
     position: static;
   }
 
-  /* line 164, ../_sass/components/_headers.scss */
+  /* line 185, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li.menu-item-has-children > a::after {
-    content: ">";
+    content: " >";
     font-weight: bold;
   }
 }
