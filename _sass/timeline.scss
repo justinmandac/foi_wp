@@ -3,7 +3,6 @@
 
 @import "variables";
 
-
 .intro-section {
   min-height: 100vh;
   background-size: cover;
@@ -31,7 +30,6 @@
     .heading-group h1:last-child {
       width: 37%;
     }
-
 
 .timeline-section {
   position: relative;
@@ -67,7 +65,6 @@
 }
   .timeline-item .date-block,
   .timeline-item .content-block {
-
     position: relative;
     box-sizing: border-box;
   }
@@ -119,10 +116,36 @@
   text-align: left;
 }
 
-.timeline-item .content-inner .content {
+
+.timeline-item .content {
   background: $content_bg;
   color: $content_font_color;
   padding: 1.5%;
+  position: relative;
+  display: inline-block;
+}
+
+ .timeline-item.right .arrow {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid darken($content_bg, 10%);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+ .timeline-item.left .arrow {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid darken($content_bg, 10%);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 100% - $component-distance;
 }
 
 .timeline-item .dot {

@@ -44,10 +44,10 @@
               <div class="content">
                 Committee Chairperson Rep. Jorge Almonte, House FOI champions and authors hold press briefing expressing their readiness for FOI Second Reading.
               </div>
+              <div class="arrow"></div>
             </div>
           </div>
         </li>
-
         <li class="timeline-item right">
           <div class="date-block">
             <div class="date-container">
@@ -63,6 +63,9 @@
             <div class="content-inner">
                 <div class="content">
 Scheduled group filing of the FOI Committee Report with the Secretary General by Committee on Public Information Chairperson Rep. Jorge Almonte, together with House FOI authors, champions and advocates, was postponed.
+                </div>
+                <div class="arrow">
+
                 </div>
             </div>
           </div>
