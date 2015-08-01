@@ -1,6 +1,12 @@
 @mixin bp($type) {
   @if $type == small {
-    @media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 569px) {
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 568px) {
+      @content;
+    }
+  }
+  
+  @if $type == medium {
+    @media screen and (min-device-width: 569px) and (max-device-width: 768px), screen and (min-width: 569px) and (max-width: 768px) {
       @content;
     }
   }
