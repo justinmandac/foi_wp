@@ -70,6 +70,9 @@ html {
 
 /* line 44, ../_sass/timeline.scss */
 .congress-heading.fixed {
+  -webkit-box-shadow: -1px 3px 22px 5px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: -1px 3px 22px 5px rgba(0, 0, 0, 0.23);
+  box-shadow: -1px 3px 22px 5px rgba(0, 0, 0, 0.23);
   position: fixed;
   background-color: #fff;
   width: 100%;
@@ -77,12 +80,12 @@ html {
   z-index: 998;
 }
 
-/* line 52, ../_sass/timeline.scss */
+/* line 53, ../_sass/timeline.scss */
 .congress-heading.fixed h1 {
   margin-bottom: 0;
 }
 
-/* line 55, ../_sass/timeline.scss */
+/* line 56, ../_sass/timeline.scss */
 .congress-heading .inner {
   max-width: 68em;
   margin-left: auto;
@@ -96,12 +99,12 @@ html {
   display: table;
 }
 
-/* line 59, ../_sass/timeline.scss */
+/* line 60, ../_sass/timeline.scss */
 .congress-container {
   position: relative;
 }
 
-/* line 63, ../_sass/timeline.scss */
+/* line 64, ../_sass/timeline.scss */
 .timeline-line {
   height: 100%;
   width: 6px;
@@ -110,7 +113,7 @@ html {
   left: 50.75%;
 }
 
-/* line 72, ../_sass/timeline.scss */
+/* line 73, ../_sass/timeline.scss */
 .timeline-item {
   max-width: 68em;
   margin-left: auto;
@@ -124,7 +127,7 @@ html {
   display: table;
 }
 
-/* line 77, ../_sass/timeline.scss */
+/* line 78, ../_sass/timeline.scss */
 .timeline-item.marker h2 {
   text-align: center;
   z-index: 100;
@@ -134,26 +137,26 @@ html {
   background-color: #fff;
 }
 
-/* line 85, ../_sass/timeline.scss */
+/* line 86, ../_sass/timeline.scss */
 .timeline-item.marker:first-child h2 {
   line-height: 0;
 }
 
-/* line 88, ../_sass/timeline.scss */
+/* line 89, ../_sass/timeline.scss */
 .timeline-item .date-block,
 .timeline-item .content-block {
   position: relative;
   box-sizing: border-box;
 }
 
-/* line 94, ../_sass/timeline.scss */
+/* line 95, ../_sass/timeline.scss */
 .timeline-item .dot-block {
   position: absolute;
   text-align: center;
   left: 50%;
 }
 
-/* line 101, ../_sass/timeline.scss */
+/* line 102, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-block {
   float: left;
@@ -166,12 +169,12 @@ html {
   width: 48.82117%;
 }
 
-/* line 106, ../_sass/timeline.scss */
+/* line 107, ../_sass/timeline.scss */
 .timeline-item.right .content-block {
   width: 51.17883%;
 }
 
-/* line 112, ../_sass/timeline.scss */
+/* line 113, ../_sass/timeline.scss */
 .timeline-item.left .content-block,
 .timeline-item.right .date-block {
   float: right;
@@ -184,34 +187,34 @@ html {
   width: 48.82117%;
 }
 
-/* line 117, ../_sass/timeline.scss */
+/* line 118, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   width: 48.82117%;
 }
 
-/* line 122, ../_sass/timeline.scss */
+/* line 123, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-inner {
   text-align: right;
 }
 
-/* line 127, ../_sass/timeline.scss */
+/* line 128, ../_sass/timeline.scss */
 .timeline-item.left .date-container {
   margin-right: 5%;
 }
 
-/* line 131, ../_sass/timeline.scss */
+/* line 132, ../_sass/timeline.scss */
 .timeline-item.left .content-inner,
 .timeline-item.right .date-container {
   margin-left: 5%;
 }
 
-/* line 137, ../_sass/timeline.scss */
+/* line 138, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   text-align: left;
 }
 
-/* line 142, ../_sass/timeline.scss */
+/* line 143, ../_sass/timeline.scss */
 .timeline-item .content {
   background: #2052DA;
   color: #fff;
@@ -220,7 +223,7 @@ html {
   display: inline-block;
 }
 
-/* line 150, ../_sass/timeline.scss */
+/* line 151, ../_sass/timeline.scss */
 .timeline-item.right .arrow {
   width: 0;
   height: 0;
@@ -232,7 +235,7 @@ html {
   top: 0;
 }
 
-/* line 161, ../_sass/timeline.scss */
+/* line 162, ../_sass/timeline.scss */
 .timeline-item.left .arrow {
   width: 0;
   height: 0;
@@ -245,7 +248,7 @@ html {
   right: 95%;
 }
 
-/* line 173, ../_sass/timeline.scss */
+/* line 174, ../_sass/timeline.scss */
 .timeline-item .dot {
   width: 25px;
   height: 25px;
@@ -256,13 +259,13 @@ html {
   cursor: pointer;
 }
 
-/* line 183, ../_sass/timeline.scss */
+/* line 184, ../_sass/timeline.scss */
 .timeline-item .dot:hover {
   transform: scale(1.4);
   transition: 0.1s ease;
 }
 
-/* line 189, ../_sass/timeline.scss */
+/* line 190, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;
@@ -270,7 +273,7 @@ html {
   background-color: goldenrod;
 }
 
-/* line 197, ../_sass/timeline.scss */
+/* line 198, ../_sass/timeline.scss */
 .menu-trigger-container {
   position: absolute;
   right: 0;
@@ -278,41 +281,41 @@ html {
   z-index: 101;
 }
 
-/* line 204, ../_sass/timeline.scss */
+/* line 205, ../_sass/timeline.scss */
 .menu-trigger {
   text-decoration: none;
   font-size: 2em;
   color: #444;
 }
 
-/* line 211, ../_sass/timeline.scss */
+/* line 212, ../_sass/timeline.scss */
 .menu-trigger .fa {
   transition: 0.3s ease;
 }
 
-/* line 215, ../_sass/timeline.scss */
+/* line 216, ../_sass/timeline.scss */
 .menu-trigger:hover .fa {
   transform: rotate(270deg);
   transition: 0.3s ease;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
-  /* line 222, ../_sass/timeline.scss */
+  /* line 223, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 24px;
   }
 
-  /* line 226, ../_sass/timeline.scss */
+  /* line 227, ../_sass/timeline.scss */
   .timeline-item:nth-child(2) {
     margin-top: 20px;
   }
 
-  /* line 230, ../_sass/timeline.scss */
+  /* line 231, ../_sass/timeline.scss */
   .timeline-item .dot-block {
     display: none;
   }
 
-  /* line 234, ../_sass/timeline.scss */
+  /* line 235, ../_sass/timeline.scss */
   .timeline-item.left .date-block,
   .timeline-item.left .content-block,
   .timeline-item.right .date-block,
@@ -320,12 +323,12 @@ html {
     width: 100% !important;
   }
 
-  /* line 241, ../_sass/timeline.scss */
+  /* line 242, ../_sass/timeline.scss */
   .timeline-item .content {
     display: block;
   }
 
-  /* line 245, ../_sass/timeline.scss */
+  /* line 246, ../_sass/timeline.scss */
   .timeline-item.left .arrow,
   .timeline-item.left .arrow,
   .timeline-item.right .arrow,
@@ -333,24 +336,24 @@ html {
     display: none;
   }
 
-  /* line 252, ../_sass/timeline.scss */
+  /* line 253, ../_sass/timeline.scss */
   .timeline-item .date-container {
     display: block;
     text-align: center;
   }
 
-  /* line 257, ../_sass/timeline.scss */
+  /* line 258, ../_sass/timeline.scss */
   .timeline-item.left .date-container {
     margin-right: 0;
   }
 
-  /* line 261, ../_sass/timeline.scss */
+  /* line 262, ../_sass/timeline.scss */
   .timeline-item.left .content-inner,
   .timeline-item.right .date-container {
     margin-left: 0;
   }
 
-  /* line 266, ../_sass/timeline.scss */
+  /* line 267, ../_sass/timeline.scss */
   .timeline-item.right .content-inner {
     text-align: left;
   }

@@ -42,6 +42,7 @@
 }
 
 .congress-heading.fixed {
+  @include shadow-bottom();
   position: fixed;
   background-color: #fff;
   width:100%;
