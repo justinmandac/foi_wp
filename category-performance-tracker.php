@@ -44,7 +44,7 @@
     </div>
     <h3 class="view-tracker"><a href="<?php echo site_url('/foi-tracker.html')?>"><i class="fa fa-tachometer"></i>View Congress Tracker</a></h3>
   </div>
-</div>
+</div>  
 <div class="outer-wrapper container">
 
 
