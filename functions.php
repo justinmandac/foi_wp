@@ -11,6 +11,7 @@ function load_scripts() {
   if(is_page('timeline')) {
     wp_enqueue_style( 'style-name', get_stylesheet_directory_uri().'/stylesheets/timeline.css' );
     wp_enqueue_script('handlebars', get_stylesheet_directory_uri().'/js/handlebars.min.js','','3.0.3',true);
+    wp_enqueue_script('timeline', get_stylesheet_directory_uri().'/js/timeline.js','','1.0.0',true);
   }
 
   wp_enqueue_script('app', get_stylesheet_directory_uri().'/js/app.js','','1.0.0',true);
