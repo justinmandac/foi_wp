@@ -36,17 +36,13 @@
   position: relative;
   padding-top: 4%;
 }
-  .timeline-section .menu-container {
-    position:absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 2.4em;
-  }
-
-.congress-heading {
+.congress-heading {  
   text-align: center;
 }
 
+  .congress-heading .inner {
+    @include outer-container;
+  }
 .congress-container {
   position: relative;
 }

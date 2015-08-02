@@ -38,19 +38,23 @@
       </div>
     </div>
   </section>
-  
+  <div id="sidr">
+    <div class="menu-container">
+      <ul class="timeline-menu" id="timeline-menu"></ul>
+    </div>
+  </div>
   <section class="timeline-section">
-      <h1 class="congress-heading">
-        <?php echo $_congress; ?>
-      </h1>
-      <div class="menu-container">
-          <i class="fa fa-bars"></i>
+      <div class="congress-heading">
+        <div class="inner">
+          <h1><?php echo $_congress; ?></h1>
+          <div class="menu-trigger-container"><a href="#sidr" id="menu-trigger" class="menu-trigger"><i class="fa fa-bars"></i>Menu</a></div>
+        </div>
       </div>
     <section id="congress_16" class="congress-container">
       <div class="timeline-line">
       </div>
-      
-      <ul class="timeline-events">
+     
+      <ul class="timeline-events" id="timeline-events">
         <?php 
           $timeline_navi = array();
 
@@ -65,10 +69,13 @@
                 $curr_day = $day['day'];
                 $item_id = $ykey.'-'.$mkey.'-'.$dkey;
         ?>
-        <?php if($new_month) :?>
-          <li class="timeline-item" id="<?php echo 'marker-'.$curr_year.strtolower($curr_month)?>">
+        <?php if($new_month) :
+          $marker_id = 'marker-'.$curr_year.'-'.strtolower($curr_month);
+          $marker_text = $curr_month.' '.$curr_year;
+        ?>
+        <li class="timeline-item marker" id="<?php echo $marker_id; ?>" data-text="<?php echo $marker_text?>" data-year="<?php echo $curr_year?>">
             <h2>
-              <?php echo $curr_month.' '.$curr_year; $new_month = false;?>
+              <?php echo $marker_text; $new_month = false;?>
             </h2>
           </li>
         <?php endif;?>
