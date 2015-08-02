@@ -296,9 +296,62 @@ html {
   transition: 0.3s ease;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 568px) {
-  /* line 221, ../_sass/timeline.scss */
+@media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
+  /* line 222, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 24px;
+  }
+
+  /* line 226, ../_sass/timeline.scss */
+  .timeline-item:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  /* line 230, ../_sass/timeline.scss */
+  .timeline-item .dot-block {
+    display: none;
+  }
+
+  /* line 234, ../_sass/timeline.scss */
+  .timeline-item.left .date-block,
+  .timeline-item.left .content-block,
+  .timeline-item.right .date-block,
+  .timeline-item.right .content-block {
+    width: 100% !important;
+  }
+
+  /* line 241, ../_sass/timeline.scss */
+  .timeline-item .content {
+    display: block;
+  }
+
+  /* line 245, ../_sass/timeline.scss */
+  .timeline-item.left .arrow,
+  .timeline-item.left .arrow,
+  .timeline-item.right .arrow,
+  .timeline-item.right .arrow {
+    display: none;
+  }
+
+  /* line 252, ../_sass/timeline.scss */
+  .timeline-item .date-container {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 257, ../_sass/timeline.scss */
+  .timeline-item.left .date-container {
+    margin-right: 0;
+  }
+
+  /* line 261, ../_sass/timeline.scss */
+  .timeline-item.left .content-inner,
+  .timeline-item.right .date-container {
+    margin-left: 0;
+  }
+
+  /* line 266, ../_sass/timeline.scss */
+  .timeline-item.right .content-inner {
+    text-align: left;
   }
 }

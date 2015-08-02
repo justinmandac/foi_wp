@@ -218,7 +218,54 @@
   }
 
 @include bp(small) {
+  
   .congress-heading.fixed {
 	top:24px;
-}
+  }
+  
+  .timeline-item:nth-child(2) {
+    margin-top: 20px;
+  }
+  
+  .timeline-item .dot-block {
+	 display: none;
+  }
+  
+  .timeline-item.left  .date-block,
+  .timeline-item.left  .content-block,  
+  .timeline-item.right .date-block,
+  .timeline-item.right .content-block  {
+	 width: 100% !important;
+  }
+  
+  .timeline-item .content {
+    display: block;
+  }
+  
+  .timeline-item.left   .arrow,
+  .timeline-item.left   .arrow,  
+  .timeline-item.right  .arrow,
+  .timeline-item.right  .arrow  {
+    display: none;
+  }
+	
+  .timeline-item .date-container {
+    display: block;
+    text-align: center;
+  }
+  
+  .timeline-item.left .date-container {
+    margin-right: 0;
+  }
+
+  .timeline-item.left .content-inner,
+  .timeline-item.right .date-container {
+    margin-left: 0;
+  }
+  
+  .timeline-item.right .content-inner {
+    text-align: left;
+  }
+
+
 }
