@@ -4,6 +4,12 @@
     var $timeline_menu = $('#timeline-menu');
     var $timeline_markers = $('#timeline-events .marker');
     var $trigger = $('#menu-trigger');
+    var $congress_heading = $('.congress-heading');
+    var $heading_offset = $congress_heading.offset().top;
+    var $heading_height = $congress_heading.height();
+    
+    
+    console.log($heading_height);
     
     console.log($_16th_arr);
     
@@ -47,7 +53,9 @@
     
     $timeline_menu_container.append($timeline_menu);
     
-    $trigger.sidr();
+    $trigger.sidr({
+      displace: false
+    });
     
     
     $('#sidr a[href^="#"]').on('click',function (e) {
@@ -61,5 +69,20 @@
       }, 700, 'swing');
     });
     
+    
+    $(window).scroll(function() {
+      
+      var $window_offset =  $(window).scrollTop();
+      var $diff = $heading_offset - $window_offset;
+      console.log('window: '+ $window_offset);
+      console.log('diff: '+ $diff);
+      
+      if ($diff < 0) {
+        $congress_heading.addClass('fixed');
+      }
+      else {
+        $congress_heading.removeClass('fixed');
+      }
+    });
   });
 })(jQuery);
