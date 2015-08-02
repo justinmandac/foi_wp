@@ -42,7 +42,7 @@
            wp_reset_postdata();
         ?>
     </div>
-    <h3 class="view-tracker"><a href="http://i-foi.org"><i class="fa fa-tachometer"></i>View Congress Tracker</a></h3>
+    <h3 class="view-tracker"><a href="<?php bloginfo('url').'/foi-tracker.html'?>"><i class="fa fa-tachometer"></i>View Congress Tracker</a></h3>
   </div>
 </div>
 <div class="outer-wrapper container">
