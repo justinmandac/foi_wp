@@ -74,7 +74,7 @@ html {
   background-color: #fff;
   width: 100%;
   top: 30px;
-  z-index: 999;
+  z-index: 998;
 }
 
 /* line 52, ../_sass/timeline.scss */
@@ -129,28 +129,31 @@ html {
   text-align: center;
   z-index: 100;
   position: relative;
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
-/* line 82, ../_sass/timeline.scss */
+/* line 85, ../_sass/timeline.scss */
 .timeline-item.marker:first-child h2 {
   line-height: 0;
 }
 
-/* line 85, ../_sass/timeline.scss */
+/* line 88, ../_sass/timeline.scss */
 .timeline-item .date-block,
 .timeline-item .content-block {
   position: relative;
   box-sizing: border-box;
 }
 
-/* line 91, ../_sass/timeline.scss */
+/* line 94, ../_sass/timeline.scss */
 .timeline-item .dot-block {
   position: absolute;
   text-align: center;
   left: 50%;
 }
 
-/* line 98, ../_sass/timeline.scss */
+/* line 101, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-block {
   float: left;
@@ -163,12 +166,12 @@ html {
   width: 48.82117%;
 }
 
-/* line 103, ../_sass/timeline.scss */
+/* line 106, ../_sass/timeline.scss */
 .timeline-item.right .content-block {
   width: 51.17883%;
 }
 
-/* line 109, ../_sass/timeline.scss */
+/* line 112, ../_sass/timeline.scss */
 .timeline-item.left .content-block,
 .timeline-item.right .date-block {
   float: right;
@@ -181,34 +184,34 @@ html {
   width: 48.82117%;
 }
 
-/* line 114, ../_sass/timeline.scss */
+/* line 117, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   width: 48.82117%;
 }
 
-/* line 119, ../_sass/timeline.scss */
+/* line 122, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-inner {
   text-align: right;
 }
 
-/* line 124, ../_sass/timeline.scss */
+/* line 127, ../_sass/timeline.scss */
 .timeline-item.left .date-container {
   margin-right: 5%;
 }
 
-/* line 128, ../_sass/timeline.scss */
+/* line 131, ../_sass/timeline.scss */
 .timeline-item.left .content-inner,
 .timeline-item.right .date-container {
   margin-left: 5%;
 }
 
-/* line 134, ../_sass/timeline.scss */
+/* line 137, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   text-align: left;
 }
 
-/* line 139, ../_sass/timeline.scss */
+/* line 142, ../_sass/timeline.scss */
 .timeline-item .content {
   background: #2052DA;
   color: #fff;
@@ -217,7 +220,7 @@ html {
   display: inline-block;
 }
 
-/* line 147, ../_sass/timeline.scss */
+/* line 150, ../_sass/timeline.scss */
 .timeline-item.right .arrow {
   width: 0;
   height: 0;
@@ -229,7 +232,7 @@ html {
   top: 0;
 }
 
-/* line 158, ../_sass/timeline.scss */
+/* line 161, ../_sass/timeline.scss */
 .timeline-item.left .arrow {
   width: 0;
   height: 0;
@@ -242,7 +245,7 @@ html {
   right: 95%;
 }
 
-/* line 170, ../_sass/timeline.scss */
+/* line 173, ../_sass/timeline.scss */
 .timeline-item .dot {
   width: 25px;
   height: 25px;
@@ -253,13 +256,13 @@ html {
   cursor: pointer;
 }
 
-/* line 180, ../_sass/timeline.scss */
+/* line 183, ../_sass/timeline.scss */
 .timeline-item .dot:hover {
   transform: scale(1.4);
   transition: 0.1s ease;
 }
 
-/* line 186, ../_sass/timeline.scss */
+/* line 189, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;
@@ -267,7 +270,7 @@ html {
   background-color: goldenrod;
 }
 
-/* line 194, ../_sass/timeline.scss */
+/* line 197, ../_sass/timeline.scss */
 .menu-trigger-container {
   position: absolute;
   right: 0;
@@ -275,20 +278,27 @@ html {
   z-index: 101;
 }
 
-/* line 201, ../_sass/timeline.scss */
+/* line 204, ../_sass/timeline.scss */
 .menu-trigger {
   text-decoration: none;
   font-size: 2em;
   color: #444;
 }
 
-/* line 208, ../_sass/timeline.scss */
+/* line 211, ../_sass/timeline.scss */
 .menu-trigger .fa {
   transition: 0.3s ease;
 }
 
-/* line 212, ../_sass/timeline.scss */
+/* line 215, ../_sass/timeline.scss */
 .menu-trigger:hover .fa {
   transform: rotate(270deg);
   transition: 0.3s ease;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px), screen and (min-width: 320px) and (max-width: 568px) {
+  /* line 221, ../_sass/timeline.scss */
+  .congress-heading.fixed {
+    top: 24px;
+  }
 }
