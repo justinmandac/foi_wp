@@ -81,11 +81,23 @@ html {
 }
 
 /* line 53, ../_sass/timeline.scss */
+.congress-heading h1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 87.20529%;
+}
+/* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
+.congress-heading h1:last-child {
+  margin-right: 0;
+}
+
+/* line 56, ../_sass/timeline.scss */
 .congress-heading.fixed h1 {
   margin-bottom: 0;
 }
 
-/* line 56, ../_sass/timeline.scss */
+/* line 60, ../_sass/timeline.scss */
 .congress-heading .inner {
   max-width: 68em;
   margin-left: auto;
@@ -99,12 +111,43 @@ html {
   display: table;
 }
 
-/* line 60, ../_sass/timeline.scss */
+/* line 65, ../_sass/timeline.scss */
+.menu-trigger-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 10.43705%;
+  z-index: 101;
+}
+/* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
+.menu-trigger-container:last-child {
+  margin-right: 0;
+}
+
+/* line 71, ../_sass/timeline.scss */
+.menu-trigger {
+  text-decoration: none;
+  font-size: 2em;
+  color: #444;
+}
+
+/* line 78, ../_sass/timeline.scss */
+.menu-trigger .fa {
+  transition: 0.3s ease;
+}
+
+/* line 82, ../_sass/timeline.scss */
+.menu-trigger:hover .fa {
+  transform: rotate(270deg);
+  transition: 0.3s ease;
+}
+
+/* line 86, ../_sass/timeline.scss */
 .congress-container {
   position: relative;
 }
 
-/* line 64, ../_sass/timeline.scss */
+/* line 90, ../_sass/timeline.scss */
 .timeline-line {
   height: 100%;
   width: 6px;
@@ -113,7 +156,7 @@ html {
   left: 50.75%;
 }
 
-/* line 73, ../_sass/timeline.scss */
+/* line 99, ../_sass/timeline.scss */
 .timeline-item {
   max-width: 68em;
   margin-left: auto;
@@ -127,7 +170,7 @@ html {
   display: table;
 }
 
-/* line 78, ../_sass/timeline.scss */
+/* line 104, ../_sass/timeline.scss */
 .timeline-item.marker h2 {
   text-align: center;
   z-index: 100;
@@ -137,26 +180,26 @@ html {
   background-color: #fff;
 }
 
-/* line 86, ../_sass/timeline.scss */
+/* line 112, ../_sass/timeline.scss */
 .timeline-item.marker:first-child h2 {
   line-height: 0;
 }
 
-/* line 89, ../_sass/timeline.scss */
+/* line 115, ../_sass/timeline.scss */
 .timeline-item .date-block,
 .timeline-item .content-block {
   position: relative;
   box-sizing: border-box;
 }
 
-/* line 95, ../_sass/timeline.scss */
+/* line 121, ../_sass/timeline.scss */
 .timeline-item .dot-block {
   position: absolute;
   text-align: center;
   left: 50%;
 }
 
-/* line 102, ../_sass/timeline.scss */
+/* line 128, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-block {
   float: left;
@@ -169,12 +212,12 @@ html {
   width: 48.82117%;
 }
 
-/* line 107, ../_sass/timeline.scss */
+/* line 133, ../_sass/timeline.scss */
 .timeline-item.right .content-block {
   width: 51.17883%;
 }
 
-/* line 113, ../_sass/timeline.scss */
+/* line 139, ../_sass/timeline.scss */
 .timeline-item.left .content-block,
 .timeline-item.right .date-block {
   float: right;
@@ -187,34 +230,34 @@ html {
   width: 48.82117%;
 }
 
-/* line 118, ../_sass/timeline.scss */
+/* line 144, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   width: 48.82117%;
 }
 
-/* line 123, ../_sass/timeline.scss */
+/* line 149, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-inner {
   text-align: right;
 }
 
-/* line 128, ../_sass/timeline.scss */
+/* line 154, ../_sass/timeline.scss */
 .timeline-item.left .date-container {
   margin-right: 5%;
 }
 
-/* line 132, ../_sass/timeline.scss */
+/* line 158, ../_sass/timeline.scss */
 .timeline-item.left .content-inner,
 .timeline-item.right .date-container {
   margin-left: 5%;
 }
 
-/* line 138, ../_sass/timeline.scss */
+/* line 164, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   text-align: left;
 }
 
-/* line 143, ../_sass/timeline.scss */
+/* line 169, ../_sass/timeline.scss */
 .timeline-item .content {
   background: #2052DA;
   color: #fff;
@@ -223,7 +266,7 @@ html {
   display: inline-block;
 }
 
-/* line 151, ../_sass/timeline.scss */
+/* line 177, ../_sass/timeline.scss */
 .timeline-item.right .arrow {
   width: 0;
   height: 0;
@@ -235,7 +278,7 @@ html {
   top: 0;
 }
 
-/* line 162, ../_sass/timeline.scss */
+/* line 188, ../_sass/timeline.scss */
 .timeline-item.left .arrow {
   width: 0;
   height: 0;
@@ -248,7 +291,7 @@ html {
   right: 95%;
 }
 
-/* line 174, ../_sass/timeline.scss */
+/* line 200, ../_sass/timeline.scss */
 .timeline-item .dot {
   width: 25px;
   height: 25px;
@@ -259,13 +302,13 @@ html {
   cursor: pointer;
 }
 
-/* line 184, ../_sass/timeline.scss */
+/* line 210, ../_sass/timeline.scss */
 .timeline-item .dot:hover {
   transform: scale(1.4);
   transition: 0.1s ease;
 }
 
-/* line 190, ../_sass/timeline.scss */
+/* line 216, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;
@@ -273,49 +316,23 @@ html {
   background-color: goldenrod;
 }
 
-/* line 198, ../_sass/timeline.scss */
-.menu-trigger-container {
-  position: absolute;
-  right: 0;
-  top: 8px;
-  z-index: 101;
-}
-
-/* line 205, ../_sass/timeline.scss */
-.menu-trigger {
-  text-decoration: none;
-  font-size: 2em;
-  color: #444;
-}
-
-/* line 212, ../_sass/timeline.scss */
-.menu-trigger .fa {
-  transition: 0.3s ease;
-}
-
-/* line 216, ../_sass/timeline.scss */
-.menu-trigger:hover .fa {
-  transform: rotate(270deg);
-  transition: 0.3s ease;
-}
-
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
-  /* line 223, ../_sass/timeline.scss */
+  /* line 225, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 24px;
   }
 
-  /* line 227, ../_sass/timeline.scss */
+  /* line 229, ../_sass/timeline.scss */
   .timeline-item:nth-child(2) {
     margin-top: 20px;
   }
 
-  /* line 231, ../_sass/timeline.scss */
+  /* line 233, ../_sass/timeline.scss */
   .timeline-item .dot-block {
     display: none;
   }
 
-  /* line 235, ../_sass/timeline.scss */
+  /* line 237, ../_sass/timeline.scss */
   .timeline-item.left .date-block,
   .timeline-item.left .content-block,
   .timeline-item.right .date-block,
@@ -323,12 +340,12 @@ html {
     width: 100% !important;
   }
 
-  /* line 242, ../_sass/timeline.scss */
+  /* line 244, ../_sass/timeline.scss */
   .timeline-item .content {
     display: block;
   }
 
-  /* line 246, ../_sass/timeline.scss */
+  /* line 248, ../_sass/timeline.scss */
   .timeline-item.left .arrow,
   .timeline-item.left .arrow,
   .timeline-item.right .arrow,
@@ -336,24 +353,24 @@ html {
     display: none;
   }
 
-  /* line 253, ../_sass/timeline.scss */
+  /* line 255, ../_sass/timeline.scss */
   .timeline-item .date-container {
     display: block;
     text-align: center;
   }
 
-  /* line 258, ../_sass/timeline.scss */
+  /* line 260, ../_sass/timeline.scss */
   .timeline-item.left .date-container {
     margin-right: 0;
   }
 
-  /* line 262, ../_sass/timeline.scss */
+  /* line 264, ../_sass/timeline.scss */
   .timeline-item.left .content-inner,
   .timeline-item.right .date-container {
     margin-left: 0;
   }
 
-  /* line 267, ../_sass/timeline.scss */
+  /* line 269, ../_sass/timeline.scss */
   .timeline-item.right .content-inner {
     text-align: left;
   }

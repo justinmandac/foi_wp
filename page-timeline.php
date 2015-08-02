@@ -46,7 +46,9 @@
   <section class="timeline-section">
       <div class="congress-heading">
         <div class="inner">
-          <h1><?php echo $_congress; ?></h1>
+          <div class="heading">
+            <h1><?php echo $_congress; ?></h1>
+          </div>
           <div class="menu-trigger-container"><a href="#sidr" id="menu-trigger" class="menu-trigger"><i class="fa fa-bars"></i>Menu</a></div>
         </div>
       </div>

@@ -50,13 +50,39 @@
   z-index: 998;
 }
 
+  .congress-heading h1 {
+    @include span-columns(10.5);
+  }  
   .congress-heading.fixed h1 {
     margin-bottom: 0;
+    
   }
   .congress-heading .inner {
     @include outer-container;
     position: relative;
   }
+
+  .menu-trigger-container {
+    @include span-columns(1.5);
+    
+    z-index: 101;
+  }
+
+  .menu-trigger {
+    text-decoration: none;
+    font-size: 2em;
+    color: #444;
+
+  }
+
+  .menu-trigger  .fa {
+    transition: 0.3s ease;
+  }
+
+.menu-trigger:hover .fa {
+  transform: rotate(270deg);
+  transition: 0.3s ease;
+}
 .congress-container {
   position: relative;
 }
@@ -193,30 +219,6 @@
   color: $date_font_color;
   background-color: $date_bg;
 }
-
-
-.menu-trigger-container {
-  position: absolute;
-  right: 0;
-  top: 8px;
-  z-index: 101;
-}
-
-  .menu-trigger {
-    text-decoration: none;
-    font-size: 2em;
-    color: #444;
-
-  }
-
-  .menu-trigger  .fa {
-    transition: 0.3s ease;
-  }
-
-  .menu-trigger:hover .fa {
-    transform: rotate(270deg);
-    transition: 0.3s ease;
-  }
 
 @include bp(small) {
   
