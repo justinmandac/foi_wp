@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+
+<?php
+  
+?>
+
 <?php 
   $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/16th-congress.json');
   $_json = json_decode($_file, true);
@@ -47,38 +52,48 @@
       
       <ul class="timeline-events">
         <?php 
+          $timeline_navi = array();
+
           //TIMELINE MAIN LOOP
-         
-   
-          foreach($_years as $year):
+          foreach($_years as $ykey => $year):
             $curr_year = $year['year'];
-
-            foreach($year['Months'] as $month):
+           
+            foreach($year['Months'] as $mkey => $month):
               $curr_month = $month['month'];
-
-              foreach($month['Days'] as $day):
+              $new_month = true;
+              foreach($month['Days'] as $dkey => $day):
                 $curr_day = $day['day'];
+                $item_id = $ykey.'-'.$mkey.'-'.$dkey;
         ?>
-        <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" data-date="<?php echo $curr_month.'-'.$curr_day.'-'.$curr_year ?>">
-          <div class="date-block">
-            <div class="date-container">
-              <?php echo $curr_month.' '.$curr_day.', '.$curr_year?>
-            </div>
-          </div>
-          <div class="dot-block">
-            <div class="dot"></div>
-          </div>
-          <div class="content-block">
-            <div class="content-inner">
-              <div class="content">
-                <?php echo $day['activity'] ?>
-              </div>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </li>
+        <?php if($new_month) :?>
+          <li class="timeline-item" id="<?php echo 'marker-'.$curr_year.strtolower($curr_month)?>">
+            <h2>
+              <?php echo $curr_month.' '.$curr_year; $new_month = false;?>
+            </h2>
+          </li>
+        <?php endif;?>
+                <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" id="<?php echo $item_id?>">
+                  <div class="date-block">
+                    <div class="date-container">
+                      <?php echo $curr_month.' '.$curr_day.', '.$curr_year?>
+                    </div>
+                  </div>
+                  <div class="dot-block">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="content-block">
+                    <div class="content-inner">
+                      <div class="content">
+                        <?php echo $day['activity'] ?>
+                      </div>
+                      <div class="arrow"></div>
+                    </div>
+                  </div>
+                </li>
             
-            <?php endforeach;?>  
+            <?php endforeach;
+              
+            ?>  
           <?php endforeach; ?>
         <?php endforeach; ?>
       </ul>
