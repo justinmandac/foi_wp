@@ -259,7 +259,7 @@ html {
 
 /* line 169, ../_sass/timeline.scss */
 .timeline-item .content {
-  background: #2052DA;
+  background: #176799;
   color: #fff;
   padding: 1.5%;
   position: relative;
@@ -272,7 +272,7 @@ html {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #1941ae;
+  border-left: 15px solid #10496d;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -284,7 +284,7 @@ html {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #1941ae;
+  border-right: 15px solid #10496d;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -313,26 +313,27 @@ html {
   display: inline-block;
   padding: 1%;
   color: #fff;
-  background-color: goldenrod;
+  background-color: #D4D34A;
+  font-weight: bolder;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
-  /* line 225, ../_sass/timeline.scss */
+  /* line 226, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 24px;
   }
 
-  /* line 229, ../_sass/timeline.scss */
+  /* line 230, ../_sass/timeline.scss */
   .timeline-item:nth-child(2) {
     margin-top: 20px;
   }
 
-  /* line 233, ../_sass/timeline.scss */
+  /* line 234, ../_sass/timeline.scss */
   .timeline-item .dot-block {
     display: none;
   }
 
-  /* line 237, ../_sass/timeline.scss */
+  /* line 238, ../_sass/timeline.scss */
   .timeline-item.left .date-block,
   .timeline-item.left .content-block,
   .timeline-item.right .date-block,
@@ -340,12 +341,12 @@ html {
     width: 100% !important;
   }
 
-  /* line 244, ../_sass/timeline.scss */
+  /* line 245, ../_sass/timeline.scss */
   .timeline-item .content {
     display: block;
   }
 
-  /* line 248, ../_sass/timeline.scss */
+  /* line 249, ../_sass/timeline.scss */
   .timeline-item.left .arrow,
   .timeline-item.left .arrow,
   .timeline-item.right .arrow,
@@ -353,25 +354,39 @@ html {
     display: none;
   }
 
-  /* line 255, ../_sass/timeline.scss */
+  /* line 256, ../_sass/timeline.scss */
   .timeline-item .date-container {
     display: block;
     text-align: center;
   }
 
-  /* line 260, ../_sass/timeline.scss */
+  /* line 261, ../_sass/timeline.scss */
   .timeline-item.left .date-container {
     margin-right: 0;
   }
 
-  /* line 264, ../_sass/timeline.scss */
+  /* line 265, ../_sass/timeline.scss */
   .timeline-item.left .content-inner,
   .timeline-item.right .date-container {
     margin-left: 0;
   }
 
-  /* line 269, ../_sass/timeline.scss */
+  /* line 270, ../_sass/timeline.scss */
   .timeline-item.right .content-inner {
     text-align: left;
+  }
+
+  /* line 274, ../_sass/timeline.scss */
+  .congress-heading h1,
+  .menu-trigger-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
+  .congress-heading h1:last-child,
+  .menu-trigger-container:last-child {
+    margin-right: 0;
   }
 }

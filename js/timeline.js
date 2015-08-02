@@ -67,6 +67,8 @@
       $('html, body').stop().animate({
         'scrollTop': $target.offset().top - 30
       }, 700, 'swing');
+      
+      jQuery.sidr('close' );
     });
     
     

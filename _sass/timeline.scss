@@ -218,6 +218,7 @@
   padding: 1%;
   color: $date_font_color;
   background-color: $date_bg;
+  font-weight: bolder;
 }
 
 @include bp(small) {
@@ -270,5 +271,9 @@
     text-align: left;
   }
 
+  .congress-heading h1,
+  .menu-trigger-container {
+    @include span-columns(12);
+  } 
 
 }

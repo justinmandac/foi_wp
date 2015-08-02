@@ -40,6 +40,7 @@
   </section>
   <div id="sidr">
     <div class="menu-container">
+      <div class="timeline-menu-header"><h5>Close</h5></div>
       <ul class="timeline-menu" id="timeline-menu"></ul>
     </div>
   </div>
