@@ -221,6 +221,12 @@ html {
 }
 
 /* line 162, ../_sass/timeline.scss */
+.timeline-item .dot:hover {
+  transform: scale(1.4);
+  transition: 0.1s ease;
+}
+
+/* line 168, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;
