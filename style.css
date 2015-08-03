@@ -562,14 +562,15 @@ p {
   .navi-wrapper .menu li {
     display: block;
     text-align: center;
+    margin: 0;
   }
 
-  /* line 194, ../_sass/components/_headers.scss */
+  /* line 195, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li:hover .sub-menu {
     position: static;
   }
 
-  /* line 198, ../_sass/components/_headers.scss */
+  /* line 199, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li.menu-item-has-children > a::after {
     content: " >";
     font-weight: bold;
@@ -614,7 +615,7 @@ body {
 
 /* line 17, ../_sass/components/_pages.scss */
 body.home {
-  background-color: #444;
+  background-color: #664D42;
 }
 
 /* line 21, ../_sass/components/_pages.scss */
@@ -970,7 +971,7 @@ body.home .footer-wrapper {
 
 /* line 5, ../_sass/components/_footer.scss */
 .footer-wrapper {
-  background-color: #444;
+  background-color: #664D42;
   color: #fff;
   padding: 1% 0 1% 0;
   width: 100%;

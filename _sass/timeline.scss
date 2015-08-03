@@ -90,7 +90,7 @@
   .timeline-line {
     height: 100%;
     width: $line_width;
-    background-color: #ccc;
+    background-color: $line-color;
     position: absolute;
     left: $line_offset;
   }

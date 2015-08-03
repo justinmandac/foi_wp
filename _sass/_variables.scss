@@ -12,27 +12,30 @@ $topm-font-family: "quicksand-regular", "arial", "sans-serif";
 /*
   FOOTER
 */
-$footer-bg: #444;
+$footer-bg: #664D42;
 $footer-text-color: #fff;
 
 /*
   TIMELINE
 */
 
-$dot_color: #444;
-$dot_border: #ccc;
+$line_width: 6px;
+$line_offset: 50.75%;
+$line-color: #FF6526;
+
+$dot_color: #fff;
+$dot_border: $line-color;
 $dot_border_dim: 5px;
 $dot-dim: 25px;
 
-$line_width: 6px;
-$line_offset: 50.75%;
+
 
 $component-distance: 5%;
 
-$content_bg: #176799;
+$content_bg: #664D42;
 $content_font_color: #fff;
 
-$date_bg: #D4D34A;
+$date_bg: #69D269;
 $date_font_color: #fff;
 
 $arrow_dim: 15px;
