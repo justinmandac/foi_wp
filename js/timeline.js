@@ -9,49 +9,52 @@
       $congress_heading = $('.congress-heading'),
       $heading_offset = $congress_heading.offset().top,
       $heading_height = $congress_heading.height(),
-      $curr_year = null,
-      $prev_year = null;
+      $menu_model = $('#timeline-events').children();
     
+      $timeline_menu.detach();
+
     //console.log($heading_height);
     
     //console.log($_16th_arr);
     
     //console.log($timeline_markers);
-    
-    $timeline_menu.detach();
-    
 
     
-    $.each($timeline_markers, function (key, val) {
+    $.each($menu_model, function (key, val){
+      console.log($(val));
+      var $year_obj = $(val);
+      var $year = $year_obj[0].dataset.year;
       
-      var $marker_text = $(val).attr('data-text'),
-        $marker_year = $(val).attr('data-year'),
-        $marker_id   = $(val).attr('id');
+      var $months = $year_obj.children();
       
+      var $year_li = $('<li></li>');
+      var $year_heading = $('<h4>' + $year + '</h4>');
+
       
-      var $li = $('<li></li>');
+      $year_li.append($year_heading);
       
-      var $link = $('<a>' + $marker_text + '</a>').attr({
-        href: '#' + $marker_id,
-        text: $marker_text
-      });
+      var $month_ul = $('<ul></ul>');
+      console.log($year);
       
-      $li.append($link);
-      $timeline_menu.append($li);
-      
-      $curr_year = $marker_year;
-      
-      if($curr_year !== $prev_year) {
-        //create sub-list
+      $.each($months, function(key, val){
+        var $month_obj = $(val);
+        var $month = $month_obj[0].dataset.month;
+        var $id = $month_obj[0].id;
         
-      }
-        else {
-        //insert elements into created sub-list
-        }
-      
-      $prev_year = $curr_year;
+        var $month_li = $('<li></li>');
+        var $month_a = $('<a>'+$month+'</a>').attr({
+          href: '#' + $id
+        });
+
+        $month_li.append($month_a);
+        $month_ul.append($month_li);
+
+      });
+      $year_li.append($month_ul);
+      $timeline_menu.append($year_li);
       
     });
+
     
     $timeline_menu_container.append($timeline_menu);
     
@@ -70,7 +73,7 @@
         'scrollTop': $target.offset().top - 30
       }, 700, 'swing');
       
-      jQuery.sidr('close' );
+      //jQuery.sidr('close' );
     });
     
     

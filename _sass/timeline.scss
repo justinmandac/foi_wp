@@ -64,7 +64,7 @@
 
   .menu-trigger-container {
     @include span-columns(1.5);
-    
+    margin-top: 0.5%;
     z-index: 101;
   }
 

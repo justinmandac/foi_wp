@@ -40,7 +40,7 @@
   </section>
   <div id="sidr">
     <div class="menu-container">
-      <div class="timeline-menu-header"><h5>Close</h5></div>
+      <div class="timeline-menu-header"></div>
       <ul class="timeline-menu" id="timeline-menu"></ul>
     </div>
   </div>
@@ -65,24 +65,32 @@
           foreach($_years as $ykey => $year):
             $curr_year = $year['year'];
            
+          ?>
+        <li class="timeline-year-container" data-year="<?php echo $curr_year?>">
+
+           <?php
             foreach($year['Months'] as $mkey => $month):
               $curr_month = $month['month'];
+              $item_id = 'item-'.$ykey.'-'.$mkey;
+          ?>
+
+          <ul class="timeline-month-container" data-month="<?php echo $curr_month ?>" id="<?php echo $item_id?>">
+            <?php
               $new_month = true;
               foreach($month['Days'] as $dkey => $day):
                 $curr_day = $day['day'];
-                $item_id = $ykey.'-'.$mkey.'-'.$dkey;
         ?>
         <?php if($new_month) :
           $marker_id = 'marker-'.$curr_year.'-'.strtolower($curr_month);
           $marker_text = $curr_month.' '.$curr_year;
         ?>
-        <li class="timeline-item marker" id="<?php echo $marker_id; ?>" data-text="<?php echo $marker_text?>" data-year="<?php echo $curr_year?>">
+             <li class="timeline-item marker" id="<?php echo $marker_id; ?>" data-text="<?php echo $marker_text?>" >
             <h2>
               <?php echo $marker_text; $new_month = false;?>
             </h2>
           </li>
         <?php endif;?>
-                <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" id="<?php echo $item_id?>">
+             <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" >
                   <div class="date-block">
                     <div class="date-container">
                       <?php echo $curr_month.' '.$curr_day.', '.$curr_year?>
@@ -104,7 +112,10 @@
             <?php endforeach;
               
             ?>  
+          </ul>
           <?php endforeach; ?>
+
+        </li>
         <?php endforeach; ?>
       </ul>
     </section>
