@@ -23,10 +23,10 @@
         <div class="search-wrapper">
           <div class="search-content">
             <div class="search-trigger">
-              <div class="open">
+              <div class="open-search-message">
                 <i class="fa fa-search"></i><span>Search</span>
               </div>
-              <div class="close">
+              <div class="close-search-message">
                 <i class="fa fa-times-circle"></i><span>Close</span>
               </div>
             </div>

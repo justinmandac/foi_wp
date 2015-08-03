@@ -56,16 +56,16 @@
       .search-content .search-trigger {
         display: inline-block;
       }
-        .search-trigger .close {
+        .search-trigger .close-search-message {
           display: none;
         }
-        .search-trigger .open {
+        .search-trigger .open-search-message {
           display: inline-block;
         }
-        .search-trigger.search-active .open {
+        .search-trigger.search-active .open-search-message {
           display: none;
         }
-        .search-trigger.search-active .close {
+        .search-trigger.search-active .close-search-message {
           display: inline-block;
         }
       .search-content .search-content-inner {
