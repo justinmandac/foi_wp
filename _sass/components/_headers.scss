@@ -1,8 +1,41 @@
+.header-main {
+  position: relative;
+  background-color: $topm-bg-color;
+  padding: 4px 0;
+}
+
+  .header-main .header-inner {
+    @include outer-container;
+    background-color: inherit;
+  }
+
+  .header-inner .logo-wrapper {
+    @include span-columns(3);
+    @include omega;
+
+  }
+    .header-inner .logo-content {
+      background-repeat: no-repeat;
+      display: block;
+      width: 150px;
+      height: 44px;
+      background-position: -5px -2px;
+      background-size:cover;
+      cursor: pointer;
+    }
+    .header-inner .logo-content.reg {
+      width: 120px;
+      height: auto;
+      background-position: -5px -135px;
+    }
+
 .navi-wrapper {
+  @include span-columns(9);
   background-color: $topm-bg-color;
   position: relative;
+  margin-top: .8%;
 }
-.navi-wrapper.fixed {
+.header-main.fixed {
   position: fixed;
   top:0;
   left:0;
@@ -10,8 +43,8 @@
   z-index:999;
 }
   .navi-wrapper .menu-ifoi-container,
-  .navi-wrapper > div {
-    @include outer-container;
+  .navi-wrapper > .menu-main-navigation-container {
+
   }
   .navi-wrapper .trigger {
     display: none;
@@ -26,11 +59,11 @@
     .navi-wrapper .menu li {
       display: inline-block;
       margin: 0 0.5%;
-      padding: .3% .5%;
+      padding: .3% 1%;
       position: relative;
-      min-width: 18%;
       text-align: center;
       transition: 250ms ease;
+      border-radius: 5px;
     }
     .navi-wrapper li:hover {
       background: #fff;
@@ -51,7 +84,7 @@
 
       .navi-wrapper li.current-menu-item > a,
       .navi-wrapper li.current_page_item > a {
-        font-style:italic;
+        font-weight: bolder;
         color: #444;
       }
 
@@ -95,12 +128,6 @@
   padding: .5% 0;
   background: #fff;
 }
-  .page-header .logo-wrapper {
-    @include span-columns(4);
-  }
-    .page-header .logo-wrapper img {
-      width:40%;
-    }
   .page-header .search-wrapper {
     @include span-columns(8);
     text-align: right;
@@ -158,6 +185,17 @@
 */
 
 @include bp(small) {
+
+  .header-inner .logo-wrapper,
+  .header-inner .navi-wrapper {
+    @include span-columns(12);
+  }
+
+  .header-inner .logo-wrapper .logo-content {
+    margin: 0 auto;
+    width: 90px;
+    height: 25px;
+  }
 
   .navi-wrapper .trigger {
     display: block;

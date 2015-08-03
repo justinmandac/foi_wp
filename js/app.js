@@ -1,7 +1,7 @@
 (function($){
 
   $(function() {
-    var navi_wrapper = $('.navi-wrapper');
+    var navi_wrapper = $('.header-main');
     var navi_fixed = false;
     var menu_trigger = $('.navi-wrapper .trigger');
     var menu_container = $('.navi-wrapper .menu');

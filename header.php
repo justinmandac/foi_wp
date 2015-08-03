@@ -14,23 +14,17 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div class="header-wrapper">
-      <header class="navi-wrapper">
-        <div class="trigger">
-            <span><i class="fa fa-bars"></i>Menu</span>
+    <header class="header-main">
+      <div class="header-inner">
+        <div class="logo-wrapper">
+          <div class="logo-content" onclick="location.href='<?php echo site_url();?>'" style="background-image:url('<?php echo get_template_directory_uri().'/images/spritesheet.png' ?>')">
+          </div>
         </div>
-        <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
-      </header>
-      <div class="page-header-wrapper">
-        <header class="page-header">
-          <div class="logo-wrapper">
-            <div class="logo-content">
-              <a href="<?php bloginfo('url'); ?>">  <img src="<?php echo get_template_directory_uri().'/images/logo.jpg' ?>" alt=""></a>
-            </div>
-          </div>        
-        <div class="search-wrapper">
-          <?php get_search_form(); ?>
+        <div class="navi-wrapper">
+          <div class="trigger">
+            <span><i class="fa fa-bars"></i>Menu</span>
+          </div>
+          <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
         </div>
       </div>
-      </header>
-    </div>
+    </header>
