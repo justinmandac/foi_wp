@@ -106,6 +106,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   src: url("fonts/quicksand-bold/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-bold/quicksand-bold-webfont.woff2") format("woff2"), url("fonts/quicksand-bold/quicksand-bold-webfont.woff") format("woff"), url("fonts/quicksand-bold/quicksand-bold-webfont.ttf") format("truetype"), url("fonts/quicksand-bold/quicksand-bold-webfont.svg#quicksand-bold") format("svg");
 }
+@font-face {
+  font-family: "liberation-sans-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/liberations-sans-regular/liberationsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/liberations-sans-regular/liberationsans-regular-webfont.woff2") format("woff2"), url("fonts/liberations-sans-regular/liberationsans-regular-webfont.woff") format("woff"), url("fonts/liberations-sans-regular/liberationsans-regular-webfont.ttf") format("truetype"), url("fonts/liberations-sans-regular/liberationsans-regular-webfont.svg#liberation-sans-regular") format("svg");
+}
+@font-face {
+  font-family: "liberation-serif-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/liberation-serif-regular/liberationserif-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/liberation-serif-regular/liberationserif-regular-webfont.woff2") format("woff2"), url("fonts/liberation-serif-regular/liberationserif-regular-webfont.woff") format("woff"), url("fonts/liberation-serif-regular/liberationserif-regular-webfont.ttf") format("truetype"), url("fonts/liberation-serif-regular/liberationserif-regular-webfont.svg#liberation-serif-regular") format("svg");
+}
 /* line 1, ../_sass/_overrides.scss */
 strong {
   font-weight: bolder;
@@ -168,7 +180,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "quicksand-regular";
+  font-family: "liberation-sans-regular", "Helvetica", "arial", sans-serif;
 }
 
 /* line 12, ../_sass/components/_typography.scss */
@@ -176,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
-  font-family: "stix-regular";
+  font-family: "liberation-serif-regular", "stix-regular", "Times New Roman", serif;
 }
 
 /* line 18, ../_sass/components/_typography.scss */
@@ -485,7 +497,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-family: "quicksand-regular", "arial", "sans-serif";
+  font-family: "liberation-sans-regular", "Helvetica", "arial", sans-serif;
 }
 
 /* line 138, ../_sass/components/_headers.scss */
@@ -976,8 +988,8 @@ body.single-post .page-title {
 /* line 177, ../_sass/components/_pages.scss */
 body.page p,
 body.single-post p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+  font-size: 1.2m;
+  line-height: 1.4em;
 }
 
 /* line 183, ../_sass/components/_pages.scss */

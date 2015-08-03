@@ -1,13 +1,13 @@
 $accent-color: #cc3333;
-$heading-font-family: "stix-regular";
-$body-base-font: "quicksand-regular";
+$heading-font-family: "liberation-serif-regular", "stix-regular", "Times New Roman", serif;
+$body-base-font: "liberation-sans-regular","Helvetica", "arial", sans-serif;
 
 /*
   TOP-MENU
 */
 $topm-bg-color: $accent-color;
 $topm-text-color: #fff;
-$topm-font-family: "quicksand-regular", "arial", "sans-serif";
+$topm-font-family: $body-base-font;
 
 $topm-top-offset: 0.8%;
 
