@@ -1,4 +1,5 @@
 <?php
+update_option('home','http://i-foi.org/home');
 function register_main_menu() {
   register_nav_menu('main-nav',__( 'Main Menu' ));
   register_nav_menu('footer-nav',__( 'Footer Links' ));
