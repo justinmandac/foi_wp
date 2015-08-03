@@ -452,36 +452,20 @@ p {
   border-radius: 5px;
 }
 
-/* line 118, ../_sass/components/_headers.scss */
-.navi-wrapper li:hover {
-  background: #fff;
-}
-
-/* line 121, ../_sass/components/_headers.scss */
-.navi-wrapper li:hover > a {
-  color: #444;
-}
-
-/* line 125, ../_sass/components/_headers.scss */
+/* line 119, ../_sass/components/_headers.scss */
 .navi-wrapper li.current_page_item,
 .navi-wrapper li.current-menu-item {
   background-color: #fff;
 }
 
-/* line 130, ../_sass/components/_headers.scss */
-.navi-wrapper li.current_page_item:hover > a,
-.navi-wrapper li.current-menu-item:hover > a {
-  color: #444;
-}
-
-/* line 135, ../_sass/components/_headers.scss */
+/* line 125, ../_sass/components/_headers.scss */
 .navi-wrapper li.current-menu-item > a,
 .navi-wrapper li.current_page_item > a {
   font-weight: bolder;
   color: #444;
 }
 
-/* line 141, ../_sass/components/_headers.scss */
+/* line 131, ../_sass/components/_headers.scss */
 .navi-wrapper a {
   text-transform: uppercase;
   text-decoration: none;
@@ -489,12 +473,12 @@ p {
   font-family: "quicksand-regular", "arial", "sans-serif";
 }
 
-/* line 148, ../_sass/components/_headers.scss */
+/* line 138, ../_sass/components/_headers.scss */
 .navi-wrapper .menu a[title="Performance Tracker"] {
   font-weight: bolder;
 }
 
-/* line 152, ../_sass/components/_headers.scss */
+/* line 142, ../_sass/components/_headers.scss */
 .navi-wrapper .sub-menu {
   position: absolute;
   z-index: 100;
@@ -507,47 +491,47 @@ p {
   visibility: hidden;
 }
 
-/* line 163, ../_sass/components/_headers.scss */
+/* line 153, ../_sass/components/_headers.scss */
 .navi-wrapper .sub-menu > li {
   width: 100%;
   padding: 0 27%;
   margin-left: 0;
 }
 
-/* line 168, ../_sass/components/_headers.scss */
+/* line 158, ../_sass/components/_headers.scss */
 .navi-wrapper li:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 174, ../_sass/components/_headers.scss */
+/* line 164, ../_sass/components/_headers.scss */
 .cat-header.congtrack {
   min-height: 320px;
   color: #fff;
   margin-bottom: 1%;
 }
 
-/* line 179, ../_sass/components/_headers.scss */
+/* line 169, ../_sass/components/_headers.scss */
 .cat-header.congtrack .content {
   padding: 1.5% 0;
 }
 
-/* line 182, ../_sass/components/_headers.scss */
+/* line 172, ../_sass/components/_headers.scss */
 .cat-header.congtrack a {
   color: inherit;
 }
 
-/* line 189, ../_sass/components/_headers.scss */
+/* line 179, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest-title {
   margin-bottom: 0;
 }
 
-/* line 192, ../_sass/components/_headers.scss */
+/* line 182, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest p {
   font-size: 1.4em;
 }
 
-/* line 195, ../_sass/components/_headers.scss */
+/* line 185, ../_sass/components/_headers.scss */
 .cat-header.congtrack .latest-info {
   padding: 0 0 1.2% 0;
 }
@@ -556,7 +540,7 @@ p {
   MEDIA QUERIES
 */
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
-  /* line 205, ../_sass/components/_headers.scss */
+  /* line 195, ../_sass/components/_headers.scss */
   .header-inner {
     max-width: 95%;
     margin-left: auto;
@@ -569,7 +553,7 @@ p {
     display: table;
   }
 
-  /* line 208, ../_sass/components/_headers.scss */
+  /* line 198, ../_sass/components/_headers.scss */
   .header-inner .logo-wrapper {
     float: left;
     display: block;
@@ -581,7 +565,7 @@ p {
     margin-right: 0;
   }
 
-  /* line 211, ../_sass/components/_headers.scss */
+  /* line 201, ../_sass/components/_headers.scss */
   .header-inner .search-wrapper {
     float: left;
     display: block;
@@ -593,7 +577,7 @@ p {
     margin-right: 0;
   }
 
-  /* line 215, ../_sass/components/_headers.scss */
+  /* line 205, ../_sass/components/_headers.scss */
   .header-inner .navi-wrapper {
     float: left;
     display: block;
@@ -605,7 +589,7 @@ p {
     margin-right: 0;
   }
 
-  /* line 219, ../_sass/components/_headers.scss */
+  /* line 209, ../_sass/components/_headers.scss */
   .header-inner.expand .search-content {
     position: absolute;
     top: 100%;
@@ -616,30 +600,30 @@ p {
     margin: 0 auto;
   }
 
-  /* line 229, ../_sass/components/_headers.scss */
+  /* line 219, ../_sass/components/_headers.scss */
   .header-inner .logo-wrapper .logo-content {
     margin: 0;
     width: 90px;
     height: 25px;
   }
 
-  /* line 235, ../_sass/components/_headers.scss */
+  /* line 225, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger {
     display: block;
   }
 
-  /* line 239, ../_sass/components/_headers.scss */
+  /* line 229, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger .fa {
     transition: all 0.5s;
     margin-right: 5px;
   }
 
-  /* line 244, ../_sass/components/_headers.scss */
+  /* line 234, ../_sass/components/_headers.scss */
   .navi-wrapper .trigger.twist .fa {
     transform: rotate(90deg);
   }
 
-  /* line 248, ../_sass/components/_headers.scss */
+  /* line 238, ../_sass/components/_headers.scss */
   .navi-wrapper .menu {
     opacity: 0;
     visibility: hidden;
@@ -651,26 +635,46 @@ p {
     left: 0;
   }
 
-  /* line 258, ../_sass/components/_headers.scss */
+  /* line 249, ../_sass/components/_headers.scss */
   .navi-wrapper .menu.expand {
     opacity: 1;
     visibility: visible;
     max-height: 500px;
   }
 
-  /* line 266, ../_sass/components/_headers.scss */
+  /* line 256, ../_sass/components/_headers.scss */
+  .navi-wrapper li.current_page_item,
+  .navi-wrapper li.current-menu-item {
+    background-color: #cc3333;
+  }
+
+  /* line 261, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li {
     display: block;
     text-align: center;
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  /* line 272, ../_sass/components/_headers.scss */
-  .navi-wrapper .menu li:hover .sub-menu {
+  /* line 269, ../_sass/components/_headers.scss */
+  .navi-wrapper .menu li .sub-menu {
+    display: block;
+    visibility: visible;
     position: static;
+    padding-top: 0;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
   }
 
-  /* line 276, ../_sass/components/_headers.scss */
+  /* line 278, ../_sass/components/_headers.scss */
+  .navi-wrapper .menu li .sub-menu a {
+    color: #fff;
+    font-size: 0.9em;
+  }
+
+  /* line 283, ../_sass/components/_headers.scss */
   .navi-wrapper .menu li.menu-item-has-children > a::after {
     content: " >";
     font-weight: bold;
