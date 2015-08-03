@@ -1110,49 +1110,79 @@ body.home .footer-wrapper {
 .footer-wrapper {
   background-color: #444;
   color: #fff;
-  padding: 1% 0 1% 0;
+  padding: 1% 0 1.5% 0;
   width: 100%;
   margin-top: 2%;
 }
 
 /* line 12, ../_sass/components/_footer.scss */
-.footer-content .container .left-block {
+.footer-content .left-block {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%;
 }
 /* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
-.footer-content .container .left-block:last-child {
+.footer-content .left-block:last-child {
   margin-right: 0;
 }
 
 /* line 16, ../_sass/components/_footer.scss */
-.footer-content .container .right-block {
+.footer-content .right-block {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
+  margin-right: 0;
 }
 /* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
-.footer-content .container .right-block:last-child {
+.footer-content .right-block:last-child {
   margin-right: 0;
 }
 
-/* line 19, ../_sass/components/_footer.scss */
+/* line 21, ../_sass/components/_footer.scss */
+.footer-content .full-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
+.footer-content .full-block:last-child {
+  margin-right: 0;
+}
+
+/* line 24, ../_sass/components/_footer.scss */
 .bottom-menu {
   position: relative;
 }
 
-/* line 22, ../_sass/components/_footer.scss */
+/* line 27, ../_sass/components/_footer.scss */
 .bottom-menu .menu li {
   display: inline-block;
 }
 
-/* line 25, ../_sass/components/_footer.scss */
+/* line 30, ../_sass/components/_footer.scss */
 .bottom-menu .menu a {
   color: #fff;
   font-size: 1.2rem;
+}
+
+/* line 36, ../_sass/components/_footer.scss */
+.footer-content .copyright {
+  text-align: center;
+}
+
+/* line 39, ../_sass/components/_footer.scss */
+.footer-logo {
+  background-repeat: no-repeat;
+  background-position: -5px -2px;
+  background-size: cover;
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  margin: 5px auto;
+  width: 110px;
 }
 
 /*!
