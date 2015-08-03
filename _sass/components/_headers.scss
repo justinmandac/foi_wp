@@ -3,49 +3,98 @@
   background-color: $topm-bg-color;
   padding: 4px 0;
 }
-
+  .header-main.fixed {
+    left:0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index:999;
+  }
   .header-main .header-inner {
-    @include outer-container;
+    @include outer-container(85%);
     background-color: inherit;
   }
 
   .header-inner .logo-wrapper {
-    @include span-columns(3);
+    @include span-columns(2);
     @include omega;
 
   }
     .header-inner .logo-content {
       background-repeat: no-repeat;
-      display: block;
-      width: 150px;
-      height: 44px;
       background-position: -5px -2px;
       background-size:cover;
       cursor: pointer;
+      display: block;
+      height: 44px;
+      width: 150px;
     }
     .header-inner .logo-content.reg {
-      width: 120px;
-      height: auto;
       background-position: -5px -135px;
+      height: auto;
+      width: 120px;
     }
 
-.navi-wrapper {
-  @include span-columns(9);
-  background-color: $topm-bg-color;
-  position: relative;
-  margin-top: .8%;
-}
-.header-main.fixed {
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  z-index:999;
-}
-  .navi-wrapper .menu-ifoi-container,
-  .navi-wrapper > .menu-main-navigation-container {
-
+  .navi-wrapper {
+    @include span-columns(8);
+    background-color: $topm-bg-color;
+    position: relative;
+    margin-top: $topm-top-offset;
   }
+
+  .header-inner .search-wrapper {
+    color: $topm-text-color;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 25%;
+  }
+    .search-wrapper .search-trigger .fa {
+      margin-right: 5px;
+    }
+
+      .search-content .search-trigger {
+        display: inline-block;
+      }
+        .search-trigger .close {
+          display: none;
+        }
+        .search-trigger .open {
+          display: inline-block;
+        }
+        .search-trigger.search-active .open {
+          display: none;
+        }
+        .search-trigger.search-active .close {
+          display: inline-block;
+        }
+      .search-content .search-content-inner {
+        display: none;
+      }
+      .search-content .search-form {
+        background-color: #fff;
+        border: 2px #ccc solid;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 1px 2px;
+      }
+        .search-content .search-form button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+        }
+        .search-content .search-form input[type="search"] {
+          border: none;
+        }
+        .search-content .search-form .fa {
+          margin-right:0;
+        }
+
+      .search-content.expand .search-content-inner {
+        display: inline-block;
+      }
+
   .navi-wrapper .trigger {
     display: none;
     text-align: center;
@@ -55,6 +104,7 @@
   .navi-wrapper .menu {
     list-style: none;
     text-align: left;
+    background-color: $topm-bg-color;
   }
     .navi-wrapper .menu li {
       display: inline-block;
@@ -120,40 +170,6 @@
       visibility: visible;
     }
 
-.page-header-wrapper {
-  background-color: #fff;
-}
-.page-header {
-  @include outer-container;
-  padding: .5% 0;
-  background: #fff;
-}
-  .page-header .search-wrapper {
-    @include span-columns(8);
-    text-align: right;
-  }
-    .search-form {
-      margin-top: 2%;
-    }
-    .search-form label {
-      border: 2px #444 solid;
-      padding: 1%;
-    }
-
-    .search-form input[type="search"] {
-      border:none;
-      padding:0;
-    }
-
-    .search-form input[type="search"]:focus {
-      outline:none;
-    }
-
-    .search-form button {
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
 
 .cat-header.congtrack {
   min-height: $cat-header-height;
@@ -186,13 +202,32 @@
 
 @include bp(small) {
 
-  .header-inner .logo-wrapper,
+  .header-inner {
+    @include outer-container(95%);
+  }
+  .header-inner .logo-wrapper {
+    @include span-columns(3);
+  }
+  .header-inner .search-wrapper {
+    @include span-columns(5);
+  }
+
   .header-inner .navi-wrapper {
-    @include span-columns(12);
+    @include span-columns(2);
+  }
+
+  .header-inner.expand .search-content {
+    position: absolute;
+    top: 100%;
+    z-index: 998;
+    width: 100%;
+    background-color: #cc3333;
+    left: 0;
+    margin: 0 auto;
   }
 
   .header-inner .logo-wrapper .logo-content {
-    margin: 0 auto;
+    margin: 0;;
     width: 90px;
     height: 25px;
   }
@@ -210,6 +245,16 @@
     transform: rotate(90deg);
   }
 
+  .navi-wrapper .menu {
+    opacity: 0;
+    visibility:hidden;
+    transition: 200ms ease;
+    max-height: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+  }
   .navi-wrapper .menu.expand {
     opacity: 1;
     visibility:visible;
@@ -217,12 +262,6 @@
     max-height: 500px;
   }
 
-  .navi-wrapper .menu {
-    opacity: 0;
-    visibility:hidden;
-    transition: 200ms ease;
-    max-height: 0;
-  }
 
   .navi-wrapper .menu li {
     display: block;

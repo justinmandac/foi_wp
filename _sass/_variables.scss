@@ -9,6 +9,8 @@ $topm-bg-color: $accent-color;
 $topm-text-color: #fff;
 $topm-font-family: "quicksand-regular", "arial", "sans-serif";
 
+$topm-top-offset: 0.8%;
+
 /*
   FOOTER
 */
@@ -21,7 +23,7 @@ $footer-text-color: #fff;
 
 $line_width: 6px;
 $line_offset: 50.75%;
-$line-color: #FF6526;
+$line-color: $accent-color;
 
 $dot_color: #fff;
 $dot_border: $line-color;
@@ -29,13 +31,12 @@ $dot_border_dim: 5px;
 $dot-dim: 25px;
 
 
-
 $component-distance: 5%;
 
-$content_bg: #664D42;
+$content_bg: #444;
 $content_font_color: #fff;
 
-$date_bg: #69D269;
+$date_bg: $accent-color;
 $date_font_color: #fff;
 
 $arrow_dim: 15px;

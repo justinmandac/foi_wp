@@ -20,6 +20,19 @@
           <div class="logo-content" onclick="location.href='<?php echo site_url('/');?>'" style="background-image:url('<?php echo get_template_directory_uri().'/images/spritesheet.png' ?>')">
           </div>
         </div>
+        <div class="search-wrapper">
+          <div class="search-content">
+            <div class="search-trigger">
+              <div class="open">
+                <i class="fa fa-search"></i><span>Search</span>
+              </div>
+              <div class="close">
+                <i class="fa fa-times-circle"></i><span>Close</span>
+              </div>
+            </div>
+            <?php get_search_form(); ?>
+          </div>
+        </div>
         <div class="navi-wrapper">
           <div class="trigger">
             <span><i class="fa fa-bars"></i>Menu</span>
