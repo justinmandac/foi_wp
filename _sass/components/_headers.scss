@@ -118,14 +118,14 @@
 
     .navi-wrapper li.current_page_item,
     .navi-wrapper li.current-menu-item {
-      background-color: #fff;
+      background-color: darken($topm-bg-color, 10%);
     }
 
 
       .navi-wrapper li.current-menu-item > a,
       .navi-wrapper li.current_page_item > a {
         font-weight: bolder;
-        color: #444;
+
       }
 
     .navi-wrapper a {

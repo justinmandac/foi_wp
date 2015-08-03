@@ -482,14 +482,13 @@ p {
 /* line 119, ../_sass/components/_headers.scss */
 .navi-wrapper li.current_page_item,
 .navi-wrapper li.current-menu-item {
-  background-color: #fff;
+  background-color: #a32929;
 }
 
 /* line 125, ../_sass/components/_headers.scss */
 .navi-wrapper li.current-menu-item > a,
 .navi-wrapper li.current_page_item > a {
   font-weight: bolder;
-  color: #444;
 }
 
 /* line 131, ../_sass/components/_headers.scss */
