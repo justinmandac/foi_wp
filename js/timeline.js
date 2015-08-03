@@ -1,36 +1,38 @@
-(function($){
-  $(function() {
-    var $timeline_menu_container = $('.menu-container');
-    var $timeline_menu = $('#timeline-menu');
-    var $timeline_markers = $('#timeline-events .marker');
-    var $trigger = $('#menu-trigger');
-    var $congress_heading = $('.congress-heading');
-    var $heading_offset = $congress_heading.offset().top;
-    var $heading_height = $congress_heading.height();
+(function ($) {
+  "use strict";
+  $(function () {
+
+    var $timeline_menu_container = $('.menu-container'),
+      $timeline_menu = $('#timeline-menu'),
+      $timeline_markers = $('#timeline-events .marker'),
+      $trigger = $('#menu-trigger'),
+      $congress_heading = $('.congress-heading'),
+      $heading_offset = $congress_heading.offset().top,
+      $heading_height = $congress_heading.height(),
+      $curr_year = null,
+      $prev_year = null;
     
+    //console.log($heading_height);
     
-    console.log($heading_height);
+    //console.log($_16th_arr);
     
-    console.log($_16th_arr);
-    
-    console.log($timeline_markers);
+    //console.log($timeline_markers);
     
     $timeline_menu.detach();
     
-    var $curr_year = null;
-    var $prev_year = null;
+
     
-    $.each($timeline_markers, function(key, val){
+    $.each($timeline_markers, function (key, val) {
       
-      var $marker_text = $(val).attr('data-text');
-      var $marker_year = $(val).attr('data-year');
-      var $marker_id   = $(val).attr('id');
+      var $marker_text = $(val).attr('data-text'),
+        $marker_year = $(val).attr('data-year'),
+        $marker_id   = $(val).attr('id');
       
       
       var $li = $('<li></li>');
       
-      var $link = $('<a>'+$marker_text+'</a>').attr({
-        href: '#'+$marker_id,
+      var $link = $('<a>' + $marker_text + '</a>').attr({
+        href: '#' + $marker_id,
         text: $marker_text
       });
       
@@ -43,9 +45,9 @@
         //create sub-list
         
       }
-      else {
+        else {
         //insert elements into created sub-list
-      }
+        }
       
       $prev_year = $curr_year;
       
@@ -58,7 +60,7 @@
     });
     
     
-    $('#sidr a[href^="#"]').on('click',function (e) {
+    $('#sidr a[href^="#"]').on('click', function (e) {
       e.preventDefault();
 
       var target = this.hash;
@@ -72,19 +74,19 @@
     });
     
     
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       
-      var $window_offset =  $(window).scrollTop();
-      var $diff = $heading_offset - $window_offset;
+      var $window_offset =  $(window).scrollTop(),
+        $diff = $heading_offset - $window_offset;
 /*      console.log('window: '+ $window_offset);
       console.log('diff: '+ $diff);*/
       
       if ($diff < 0) {
         $congress_heading.addClass('fixed');
       }
-      else {
-        $congress_heading.removeClass('fixed');
-      }
+        else {
+          $congress_heading.removeClass('fixed');
+        }
     });
   });
 })(jQuery);
