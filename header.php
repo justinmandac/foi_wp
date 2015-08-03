@@ -24,10 +24,10 @@
           <div class="search-content">
             <div class="search-trigger">
               <div class="open-search-message">
-                <i class="fa fa-search"></i><span>Search</span>
+                <i class="fa fa-search"></i>
               </div>
               <div class="close-search-message">
-                <i class="fa fa-times-circle"></i><span>Close</span>
+                <i class="fa fa-times-circle"></i>
               </div>
             </div>
             <?php get_search_form(); ?>
