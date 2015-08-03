@@ -17,7 +17,7 @@
     <header class="header-main">
       <div class="header-inner">
         <div class="logo-wrapper">
-          <div class="logo-content" onclick="location.href='<?php echo site_url();?>'" style="background-image:url('<?php echo get_template_directory_uri().'/images/spritesheet.png' ?>')">
+          <div class="logo-content" onclick="location.href='<?php echo site_url('/');?>'" style="background-image:url('<?php echo get_template_directory_uri().'/images/spritesheet.png' ?>')">
           </div>
         </div>
         <div class="navi-wrapper">
