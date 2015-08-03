@@ -21,7 +21,7 @@
 
     
     $.each($menu_model, function (key, val){
-      console.log($(val));
+
       var $year_obj = $(val);
       var $year = $year_obj[0].dataset.year;
       
@@ -34,7 +34,7 @@
       $year_li.append($year_heading);
       
       var $month_ul = $('<ul></ul>');
-      console.log($year);
+
       
       $.each($months, function(key, val){
         var $month_obj = $(val);
@@ -59,7 +59,13 @@
     $timeline_menu_container.append($timeline_menu);
     
     $trigger.sidr({
-      displace: false
+      displace: false,
+      onOpen: function () {
+        $trigger.addClass('open-menu');
+      },
+      onClose: function () {
+        $trigger.removeClass('open-menu');
+      }
     });
     
     
@@ -70,13 +76,14 @@
       var $target = $(target);
 
       $('html, body').stop().animate({
-        'scrollTop': $target.offset().top - 30
+        'scrollTop': $target.offset().top - 50
       }, 700, 'swing');
       
       //jQuery.sidr('close' );
     });
     
-    
+    //handles the stickiness of the timeline menu header when the header exits the
+    //viewport on scrolling down
     $(window).scroll(function () {
       
       var $window_offset =  $(window).scrollTop(),

@@ -50,7 +50,20 @@
           <div class="heading">
             <h1><?php echo $_congress; ?></h1>
           </div>
-          <div class="menu-trigger-container"><a href="#sidr" id="menu-trigger" class="menu-trigger"><i class="fa fa-bars"></i>Menu</a></div>
+          <div class="menu-trigger-container">
+            <div id="menu-trigger" class="menu-trigger">
+              <a href="#sidr">
+                <span class="open">
+                  <i class="fa fa-bars"></i>
+                  Menu
+                </span>
+                <span class="close">
+                  <i class="fa fa-times-circle"></i>
+                  Close
+                </span>
+              </a>
+            </div>
+            </div>
         </div>
       </div>
     <section id="congress_16" class="congress-container">

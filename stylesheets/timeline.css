@@ -126,29 +126,44 @@ html {
 }
 
 /* line 71, ../_sass/timeline.scss */
-.menu-trigger {
+.menu-trigger a {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.7em;
   color: #444;
 }
 
 /* line 78, ../_sass/timeline.scss */
+.menu-trigger .close {
+  display: none;
+}
+
+/* line 82, ../_sass/timeline.scss */
+.menu-trigger.open-menu .close {
+  display: block;
+}
+
+/* line 86, ../_sass/timeline.scss */
+.menu-trigger.open-menu .open {
+  display: none;
+}
+
+/* line 90, ../_sass/timeline.scss */
 .menu-trigger .fa {
   transition: 0.3s ease;
 }
 
-/* line 82, ../_sass/timeline.scss */
+/* line 94, ../_sass/timeline.scss */
 .menu-trigger:hover .fa {
   transform: rotate(270deg);
   transition: 0.3s ease;
 }
 
-/* line 86, ../_sass/timeline.scss */
+/* line 98, ../_sass/timeline.scss */
 .congress-container {
   position: relative;
 }
 
-/* line 90, ../_sass/timeline.scss */
+/* line 102, ../_sass/timeline.scss */
 .timeline-line {
   height: 100%;
   width: 6px;
@@ -157,7 +172,7 @@ html {
   left: 50.75%;
 }
 
-/* line 99, ../_sass/timeline.scss */
+/* line 111, ../_sass/timeline.scss */
 .timeline-item {
   max-width: 68em;
   margin-left: auto;
@@ -171,7 +186,7 @@ html {
   display: table;
 }
 
-/* line 104, ../_sass/timeline.scss */
+/* line 116, ../_sass/timeline.scss */
 .timeline-item.marker h2 {
   text-align: center;
   z-index: 100;
@@ -181,21 +196,21 @@ html {
   background-color: #fff;
 }
 
-/* line 113, ../_sass/timeline.scss */
+/* line 125, ../_sass/timeline.scss */
 .timeline-item .date-block,
 .timeline-item .content-block {
   position: relative;
   box-sizing: border-box;
 }
 
-/* line 119, ../_sass/timeline.scss */
+/* line 131, ../_sass/timeline.scss */
 .timeline-item .dot-block {
   position: absolute;
   text-align: center;
   left: 50%;
 }
 
-/* line 126, ../_sass/timeline.scss */
+/* line 138, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-block {
   float: left;
@@ -208,12 +223,12 @@ html {
   width: 48.82117%;
 }
 
-/* line 131, ../_sass/timeline.scss */
+/* line 143, ../_sass/timeline.scss */
 .timeline-item.right .content-block {
   width: 51.17883%;
 }
 
-/* line 137, ../_sass/timeline.scss */
+/* line 149, ../_sass/timeline.scss */
 .timeline-item.left .content-block,
 .timeline-item.right .date-block {
   float: right;
@@ -226,34 +241,34 @@ html {
   width: 48.82117%;
 }
 
-/* line 142, ../_sass/timeline.scss */
+/* line 154, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   width: 48.82117%;
 }
 
-/* line 147, ../_sass/timeline.scss */
+/* line 159, ../_sass/timeline.scss */
 .timeline-item.left .date-block,
 .timeline-item.right .content-inner {
   text-align: right;
 }
 
-/* line 152, ../_sass/timeline.scss */
+/* line 164, ../_sass/timeline.scss */
 .timeline-item.left .date-container {
   margin-right: 5%;
 }
 
-/* line 156, ../_sass/timeline.scss */
+/* line 168, ../_sass/timeline.scss */
 .timeline-item.left .content-inner,
 .timeline-item.right .date-container {
   margin-left: 5%;
 }
 
-/* line 162, ../_sass/timeline.scss */
+/* line 174, ../_sass/timeline.scss */
 .timeline-item.right .date-block {
   text-align: left;
 }
 
-/* line 167, ../_sass/timeline.scss */
+/* line 179, ../_sass/timeline.scss */
 .timeline-item .content {
   background: #444;
   color: #fff;
@@ -262,7 +277,7 @@ html {
   display: inline-block;
 }
 
-/* line 175, ../_sass/timeline.scss */
+/* line 187, ../_sass/timeline.scss */
 .timeline-item.right .arrow {
   width: 0;
   height: 0;
@@ -274,7 +289,7 @@ html {
   top: 0;
 }
 
-/* line 186, ../_sass/timeline.scss */
+/* line 198, ../_sass/timeline.scss */
 .timeline-item.left .arrow {
   width: 0;
   height: 0;
@@ -287,7 +302,7 @@ html {
   right: 95%;
 }
 
-/* line 198, ../_sass/timeline.scss */
+/* line 210, ../_sass/timeline.scss */
 .timeline-item .dot {
   width: 25px;
   height: 25px;
@@ -298,13 +313,13 @@ html {
   cursor: pointer;
 }
 
-/* line 208, ../_sass/timeline.scss */
+/* line 220, ../_sass/timeline.scss */
 .timeline-item .dot:hover {
   transform: scale(1.4);
   transition: 0.1s ease;
 }
 
-/* line 214, ../_sass/timeline.scss */
+/* line 226, ../_sass/timeline.scss */
 .timeline-item .date-container {
   display: inline-block;
   padding: 1%;
@@ -314,22 +329,22 @@ html {
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
-  /* line 224, ../_sass/timeline.scss */
+  /* line 236, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 24px;
   }
 
-  /* line 228, ../_sass/timeline.scss */
+  /* line 240, ../_sass/timeline.scss */
   .timeline-item:nth-child(2) {
     margin-top: 20px;
   }
 
-  /* line 232, ../_sass/timeline.scss */
+  /* line 244, ../_sass/timeline.scss */
   .timeline-item .dot-block {
     display: none;
   }
 
-  /* line 236, ../_sass/timeline.scss */
+  /* line 248, ../_sass/timeline.scss */
   .timeline-item.left .date-block,
   .timeline-item.left .content-block,
   .timeline-item.right .date-block,
@@ -337,12 +352,12 @@ html {
     width: 100% !important;
   }
 
-  /* line 243, ../_sass/timeline.scss */
+  /* line 255, ../_sass/timeline.scss */
   .timeline-item .content {
     display: block;
   }
 
-  /* line 247, ../_sass/timeline.scss */
+  /* line 259, ../_sass/timeline.scss */
   .timeline-item.left .arrow,
   .timeline-item.left .arrow,
   .timeline-item.right .arrow,
@@ -350,29 +365,29 @@ html {
     display: none;
   }
 
-  /* line 254, ../_sass/timeline.scss */
+  /* line 266, ../_sass/timeline.scss */
   .timeline-item .date-container {
     display: block;
     text-align: center;
   }
 
-  /* line 259, ../_sass/timeline.scss */
+  /* line 271, ../_sass/timeline.scss */
   .timeline-item.left .date-container {
     margin-right: 0;
   }
 
-  /* line 263, ../_sass/timeline.scss */
+  /* line 275, ../_sass/timeline.scss */
   .timeline-item.left .content-inner,
   .timeline-item.right .date-container {
     margin-left: 0;
   }
 
-  /* line 268, ../_sass/timeline.scss */
+  /* line 280, ../_sass/timeline.scss */
   .timeline-item.right .content-inner {
     text-align: left;
   }
 
-  /* line 272, ../_sass/timeline.scss */
+  /* line 284, ../_sass/timeline.scss */
   .congress-heading h1,
   .menu-trigger-container {
     float: left;

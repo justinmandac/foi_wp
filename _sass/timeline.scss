@@ -68,11 +68,23 @@
     z-index: 101;
   }
 
-  .menu-trigger {
+  .menu-trigger a {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #444;
 
+  }
+
+  .menu-trigger .close {
+    display: none;
+  }
+
+  .menu-trigger.open-menu .close {
+    display: block;
+  }
+
+  .menu-trigger.open-menu .open {
+    display: none;
   }
 
   .menu-trigger  .fa {
