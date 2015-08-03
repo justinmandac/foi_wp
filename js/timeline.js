@@ -76,8 +76,8 @@
       
       var $window_offset =  $(window).scrollTop();
       var $diff = $heading_offset - $window_offset;
-      console.log('window: '+ $window_offset);
-      console.log('diff: '+ $diff);
+/*      console.log('window: '+ $window_offset);
+      console.log('diff: '+ $diff);*/
       
       if ($diff < 0) {
         $congress_heading.addClass('fixed');
