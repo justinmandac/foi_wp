@@ -79,7 +79,7 @@
         'scrollTop': $target.offset().top - 50
       }, 700, 'swing');
       
-      //jQuery.sidr('close' );
+      jQuery.sidr('close' );
     });
     
     //handles the stickiness of the timeline menu header when the header exits the
