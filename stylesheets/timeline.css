@@ -133,17 +133,17 @@ html {
 }
 
 /* line 78, ../_sass/timeline.scss */
-.menu-trigger .close {
+.menu-trigger .sidr-close {
   display: none;
 }
 
 /* line 82, ../_sass/timeline.scss */
-.menu-trigger.open-menu .close {
+.menu-trigger.open-menu .sidr-close {
   display: block;
 }
 
 /* line 86, ../_sass/timeline.scss */
-.menu-trigger.open-menu .open {
+.menu-trigger.open-menu .sidr-open {
   display: none;
 }
 
@@ -331,7 +331,7 @@ html {
 @media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
   /* line 236, ../_sass/timeline.scss */
   .congress-heading.fixed {
-    top: 24px;
+    top: 34px;
   }
 
   /* line 240, ../_sass/timeline.scss */
@@ -393,11 +393,27 @@ html {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
+    width: 48.82117%;
+    margin-right: 0;
   }
   /* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
   .congress-heading h1:last-child,
   .menu-trigger-container:last-child {
     margin-right: 0;
+  }
+
+  /* line 290, ../_sass/timeline.scss */
+  .congress-heading h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 294, ../_sass/timeline.scss */
+  .menu-trigger {
+    font-size: 0.9em;
+  }
+
+  /* line 298, ../_sass/timeline.scss */
+  .congress-heading h1 {
+    line-height: 35px;
   }
 }

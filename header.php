@@ -35,7 +35,10 @@
         </div>
         <div class="navi-wrapper">
           <div class="trigger">
-            <span><i class="fa fa-bars"></i>Menu</span>
+            <i class="fa fa-bars"></i>
+            <span class="label">
+              Menu
+            </span>
           </div>
           <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
         </div>

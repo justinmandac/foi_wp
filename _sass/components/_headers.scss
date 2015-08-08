@@ -93,6 +93,7 @@
 
       .search-content.expand .search-content-inner {
         display: inline-block;
+
       }
 
   .navi-wrapper .trigger {
@@ -226,6 +227,10 @@
     display: block;
   }
 
+  .navi-wrapper .trigger .label {
+    display: none;
+  }
+
   .navi-wrapper .trigger .fa {
     transition: all 0.5s;
     margin-right: 5px;
@@ -283,5 +288,18 @@
   .navi-wrapper .menu li.menu-item-has-children > a::after {
     content: " >";
     font-weight:bold;
+  }
+
+  .search-content-inner .search-form {
+    position: absolute;
+    top: 32px;
+    z-index: 1000;
+    right: 25%;
+    display: block;
+    width: 220px;
+  }
+
+  .search-form .search-field {
+    width: 90%;
   }
 }

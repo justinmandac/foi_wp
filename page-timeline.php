@@ -53,11 +53,11 @@
           <div class="menu-trigger-container">
             <div id="menu-trigger" class="menu-trigger">
               <a href="#sidr">
-                <span class="open">
+                <span class="sidr-open">
                   <i class="fa fa-bars"></i>
                   Menu
                 </span>
-                <span class="close">
+                <span class="sidr-close">
                   <i class="fa fa-times-circle"></i>
                   Close
                 </span>

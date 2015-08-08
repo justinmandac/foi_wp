@@ -15,7 +15,7 @@
 
     //console.log($heading_height);
     
-    //console.log($_16th_arr);
+    console.log($_16th_arr);
     
     //console.log($timeline_markers);
 
