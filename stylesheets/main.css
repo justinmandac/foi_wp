@@ -1159,25 +1159,26 @@ body.home .footer-wrapper {
 /* line 24, ../_sass/components/_footer.scss */
 .bottom-menu {
   position: relative;
+  text-align: center;
 }
 
-/* line 27, ../_sass/components/_footer.scss */
+/* line 28, ../_sass/components/_footer.scss */
 .bottom-menu .menu li {
   display: inline-block;
 }
 
-/* line 30, ../_sass/components/_footer.scss */
+/* line 31, ../_sass/components/_footer.scss */
 .bottom-menu .menu a {
   color: #fff;
   font-size: 1.2rem;
 }
 
-/* line 36, ../_sass/components/_footer.scss */
+/* line 37, ../_sass/components/_footer.scss */
 .footer-content .copyright {
   text-align: center;
 }
 
-/* line 39, ../_sass/components/_footer.scss */
+/* line 40, ../_sass/components/_footer.scss */
 .footer-logo {
   background-repeat: no-repeat;
   background-position: -5px -2px;
