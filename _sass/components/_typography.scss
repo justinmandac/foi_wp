@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: $body-base-font;
@@ -58,6 +58,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 1.3em;
 }
 
 
