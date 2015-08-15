@@ -449,7 +449,7 @@ p {
 /* line 105, ../_sass/components/_headers.scss */
 .navi-wrapper .menu {
   list-style: none;
-  text-align: left;
+  text-align: center;
   background-color: #cc3333;
 }
 

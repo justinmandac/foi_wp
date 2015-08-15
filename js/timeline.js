@@ -68,6 +68,9 @@
       }
     });
     
+    $('html, body').on('click', function() {
+      jQuery.sidr('close');
+    });
     
     $('#sidr a[href^="#"]').on('click', function (e) {
       e.preventDefault();
@@ -91,7 +94,7 @@
 /*      console.log('window: '+ $window_offset);
       console.log('diff: '+ $diff);*/
       
-      if ($diff < 0) {
+      if ($diff <= 100) {
         $congress_heading.addClass('fixed');
       }
         else {
