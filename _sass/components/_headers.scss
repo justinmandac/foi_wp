@@ -104,7 +104,7 @@
   }
   .navi-wrapper .menu {
     list-style: none;
-    text-align: center;
+    text-align: right;
     background-color: $topm-bg-color;
   }
     .navi-wrapper .menu li {
@@ -115,6 +115,7 @@
       text-align: center;
       transition: 250ms ease;
       border-radius: 5px;
+      min-width:110px;
     }
 
     .navi-wrapper li.current_page_item,
