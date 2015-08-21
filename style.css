@@ -176,7 +176,7 @@ html {
 
 /* line 5, ../_sass/components/_typography.scss */
 body {
-  font-size: 1.4em;
+  font-size: 1.45em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
