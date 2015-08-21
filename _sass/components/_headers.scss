@@ -310,3 +310,19 @@
     min-width:0px;
   }
 }
+
+@media screen and (min-width: 1486px), screen  and (min-device-width: 1486px) {
+  .navi-wrapper  {
+    margin-top: 0.5%;
+  }
+}
+
+@media screen and (max-width: 1024px), screen  and (max-device-width: 1024px) {
+  .header-main .header-inner {
+    @include outer-container(90%);
+  }
+}
+
+
+
+

@@ -719,6 +719,26 @@ p {
     min-width: 0px;
   }
 }
+@media screen and (min-width: 1486px), screen and (min-device-width: 1486px) {
+  /* line 315, ../_sass/components/_headers.scss */
+  .navi-wrapper {
+    margin-top: 0.5%;
+  }
+}
+@media screen and (max-width: 1024px), screen and (max-device-width: 1024px) {
+  /* line 321, ../_sass/components/_headers.scss */
+  .header-main .header-inner {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 20, ../_sass/vendor/bourbon/addons/_clearfix.scss */
+  .header-main .header-inner::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
 /* line 1, ../_sass/components/_pages.scss */
 body {
   min-height: 100vh;
