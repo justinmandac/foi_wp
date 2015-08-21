@@ -1119,32 +1119,7 @@ body.home .footer-wrapper {
   margin-top: 2%;
 }
 
-/* line 12, ../_sass/components/_footer.scss */
-.footer-content .left-block {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-}
-/* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
-.footer-content .left-block:last-child {
-  margin-right: 0;
-}
-
-/* line 16, ../_sass/components/_footer.scss */
-.footer-content .right-block {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
-  margin-right: 0;
-}
-/* line 89, ../_sass/vendor/neat/grid/_span-columns.scss */
-.footer-content .right-block:last-child {
-  margin-right: 0;
-}
-
-/* line 21, ../_sass/components/_footer.scss */
+/* line 13, ../_sass/components/_footer.scss */
 .footer-content .full-block {
   float: left;
   display: block;
@@ -1156,29 +1131,29 @@ body.home .footer-wrapper {
   margin-right: 0;
 }
 
-/* line 24, ../_sass/components/_footer.scss */
+/* line 16, ../_sass/components/_footer.scss */
 .bottom-menu {
   position: relative;
   text-align: center;
 }
 
-/* line 28, ../_sass/components/_footer.scss */
+/* line 20, ../_sass/components/_footer.scss */
 .bottom-menu .menu li {
   display: inline-block;
 }
 
-/* line 31, ../_sass/components/_footer.scss */
+/* line 23, ../_sass/components/_footer.scss */
 .bottom-menu .menu a {
   color: #fff;
   font-size: 1.2rem;
 }
 
-/* line 37, ../_sass/components/_footer.scss */
+/* line 29, ../_sass/components/_footer.scss */
 .footer-content .copyright {
   text-align: center;
 }
 
-/* line 40, ../_sass/components/_footer.scss */
+/* line 32, ../_sass/components/_footer.scss */
 .footer-logo {
   background-repeat: no-repeat;
   background-position: -5px -2px;
