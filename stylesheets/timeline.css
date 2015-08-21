@@ -328,7 +328,7 @@ html {
   font-weight: bolder;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 768px), screen and (min-width: 320px) and (max-width: 768px) {
   /* line 236, ../_sass/timeline.scss */
   .congress-heading.fixed {
     top: 34px;

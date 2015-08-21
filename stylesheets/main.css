@@ -249,7 +249,7 @@ h6 {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 768px), screen and (min-width: 320px) and (max-width: 768px) {
   /* line 35, ../_sass/components/_typography.scss */
   h1 {
     font-size: 3.4rem;
@@ -552,7 +552,7 @@ p {
 /*
   MEDIA QUERIES
 */
-@media screen and (min-device-width: 320px) and (max-device-width: 569px), screen and (min-width: 320px) and (max-width: 569px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 768px), screen and (min-width: 320px) and (max-width: 768px) {
   /* line 197, ../_sass/components/_headers.scss */
   .header-inner {
     max-width: 95%;
@@ -711,6 +711,12 @@ p {
   /* line 303, ../_sass/components/_headers.scss */
   .search-form .search-field {
     width: 90%;
+  }
+}
+@media screen and (max-width: 1307px), screen and (max-device-width: 1307px) {
+  /* line 309, ../_sass/components/_headers.scss */
+  .navi-wrapper .menu li {
+    min-width: 0px;
   }
 }
 /* line 1, ../_sass/components/_pages.scss */

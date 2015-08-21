@@ -304,3 +304,9 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 1307px), screen  and (max-device-width: 1307px) {
+  .navi-wrapper .menu li {
+    min-width:0px;
+  }
+}
