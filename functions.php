@@ -24,6 +24,7 @@ function load_scripts() {
     wp_enqueue_script('tracker', get_stylesheet_directory_uri().'/js/tracker.js','','1.0.0',true);
     wp_enqueue_script('highcharts', get_stylesheet_directory_uri().'/js/highcharts.js','','1.0.0',true);
     wp_enqueue_script('highcharts-more', get_stylesheet_directory_uri().'/js/highcharts-more.js','','1.0.0',true);
+    wp_enqueue_script('tracker', get_stylesheet_directory_uri().'/js/tracker.js','','1.0.0',true);
     wp_enqueue_style( 'timeline-style', get_stylesheet_directory_uri().'/stylesheets/tracker.css' );
   }
 

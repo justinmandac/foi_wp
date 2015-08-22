@@ -2,11 +2,11 @@
   $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/ifoi-tracker.json');
 ?>
 <script>
-  var feed = 'http://i-foi.org/feed/?cat=2';
   /*var feed = <?php echo $_file?>;*/
 </script>
  <script>
   "use strict"
+  var feed = 'http://i-foi.org/feed/?cat=2';
   var gaugeOptions = {
 
     chart: {
