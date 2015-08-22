@@ -248,3 +248,18 @@ html {
 .button .fa {
   margin-right: 5px;
 }
+
+/* line 158, ../_sass/tracker.scss */
+.timeline-trigger.sidr-open .close-message {
+  display: inline-block;
+}
+
+/* line 162, ../_sass/tracker.scss */
+.timeline-trigger.sidr-open .open-message {
+  display: none;
+}
+
+/* line 165, ../_sass/tracker.scss */
+.close-message {
+  display: none;
+}

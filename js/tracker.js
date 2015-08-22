@@ -517,6 +517,9 @@ function renderContent(data, opts ) {
       readmore: document.getElementById('read-more-button')
     };
 
+    var triggers = document.getElementsByClassName('timeline-trigger');
+    console.log(triggers.length);
+
     function feed_success(obj) {
       var tracker_json = $.xml2json(obj).channel.item;
       //var tracker_json = obj.channel.item;
@@ -533,7 +536,22 @@ function renderContent(data, opts ) {
       renderContent(data[first_index], render_opts);
 
       $('.timeline-trigger').sidr({
-        displace: false
+        displace: false,
+        onOpen: function () {
+
+           for(var x = 0 ; x < triggers.length; x++) {
+             triggers[x].className+='sidr-open';
+           }
+
+        },
+        onClose: function() {
+
+
+          for(var x = 0 ; x < triggers.length; x++) {
+            triggers[x].className = triggers[x].className.replace(/sidr-open/g, '');
+          }
+
+        }
       });
     }
 
