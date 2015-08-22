@@ -28,6 +28,10 @@
       <div class="post-title" id="post-title">
 
       </div>
+      <div id="loader">
+        <h3 style="margin-bottom: .3em">Loading data. Please wait.</h3>
+        <h3><i class="fa fa-cog fa-spin"></i></h3>
+      </div>
       <div class="chart-container" id="chart-container">
 
       </div>

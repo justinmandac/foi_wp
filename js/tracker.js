@@ -499,7 +499,7 @@ function renderContent(data, opts ) {
 
   }));
   //hide the rotating cog + text
-  //opts.loader.css('display','none');
+  opts.loader.style.display = 'none';
 }
 
 (function($) {
@@ -514,7 +514,8 @@ function renderContent(data, opts ) {
       title: document.getElementById('post-title'),
       info: document.getElementById('post-content'),
       gauge: $('#chart-container'),
-      readmore: document.getElementById('read-more-button')
+      readmore: document.getElementById('read-more-button'),
+      loader: document.getElementById('loader')
     };
 
     var triggers = document.getElementsByClassName('timeline-trigger');
