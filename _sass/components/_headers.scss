@@ -319,7 +319,11 @@
 
 @media screen and (max-width: 1024px), screen  and (max-device-width: 1024px) {
   .header-main .header-inner {
-    @include outer-container(90%);
+    @include outer-container(95%);
+  }
+
+  .navi-wrapper .menu {
+    font-size: .98em;
   }
 }
 
