@@ -1,0 +1,158 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+@import "variables";
+@import "functions";
+
+.sidebar-wrapper .timeline-title {
+	text-align: center;
+	font-size: 2em;
+	box-shadow: none;
+	background:none;
+	border-top: none;
+	border-bottom: none;
+	margin: 5% 0;
+}
+
+.tracker-header-wrapper {
+	padding: 2%;
+	color: #fff;
+	background-size: cover;
+}
+
+.tracker-header-wrapper a {
+	color: #fff;
+}
+
+.tracker-header-wrapper .header-inner {
+	text-align: center;
+}
+	.header-inner a {
+		text-decoration: none;
+	}
+.timeline-wrapper {
+	position: relative;
+}
+
+.timeline-line {
+	height: 100%;
+	position: absolute;
+	width: 4px;
+	background-color: #444;
+	left: 50%;
+}
+
+.sidr ul {
+	position: relative;
+	z-index: 10;
+	border-top: none;
+}
+
+.point,
+	.sidr ul li {
+	@include outer-container(80%);
+	cursor: pointer;
+	border: 1px #ccc solid;
+	margin-bottom: 1em;
+	background-color: #fff;
+}
+
+.sidr ul li:hover {
+	border: 1px #ccc solid;
+}
+
+.point .icon {
+	@include span-columns(1);
+	line-height: 1em;
+}
+
+.point .text {
+	@include span-columns(11);
+}
+
+.sig-block {
+	margin: 0 2%;
+}
+
+/*resets styles from sidr stylesheet*/
+.timeline .point .point-title {
+	text-align: center;
+	font-size: inherit;
+	box-shadow: none;
+	background:none;
+	border-top: none;
+	color: #fff;
+}
+
+.timeline .point.sig .point-title {background-color: $accent-color;}
+
+.timeline .point .point-title {background-color: #444;}
+
+.content-wrapper {
+	margin-top: 4%;
+}
+
+.content {
+	text-align: center;
+}
+
+	.post-title h4, .post-title h3 {
+		margin-bottom: 0%;
+	}
+
+	.post-title a {
+		color: #444;
+	}
+
+	.content .buttons {
+		@include outer-container;
+	}
+		.content .button {
+			@include span-columns(6);
+		}
+
+		.content .button:nth-child(2) {
+			@include omega;
+		}
+		.button {
+			font-size: 1.4em;
+			box-sizing: border-box;
+			border: 1px #ccc solid;
+			border-radius: 5px;
+			padding: .2em;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+
+
+		.button--regular {
+			background-color: #fff;
+			color: #444;
+			transition: 0.4s all;
+		}
+
+		.content .button.button--full-width {
+			@include span-columns(12);
+			margin-top: 2%;
+		}
+
+		.button--regular:hover,
+		.button--transparent:hover {
+			background-color: $accent-color;
+			color: #fff;
+		}
+
+		.button--transparent {
+			background-color: transparent;
+			color: #444;
+			transition: 0.4s all;
+		}
+
+
+		.button .fa {
+			margin-right: 5px;
+		}
+
+
+

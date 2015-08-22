@@ -15,5 +15,11 @@
       <?php wp_footer(); ?>
 
     </footer>
+    <div style="display:none">
+      <?php if(is_page('tracker')) {
+  include bloginfo('template_directory').'/inc/tracker-prep.php';
+}
+      ?>
+    </div>
   </body>
 </html>
