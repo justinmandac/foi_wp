@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     },
     concat: {
       dist: {
-        src: ['info.css', 'stylesheets/main.css', 'stylesheets/font-awesome.min.css'],
+        src: ['info.css', 'stylesheets/main.css'],
         dest: 'style.css'
       }
     }

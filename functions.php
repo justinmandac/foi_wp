@@ -6,8 +6,13 @@ function register_main_menu() {
 }
 add_action( 'init', 'register_main_menu' );
 
+
+
+
 function load_scripts() {
   wp_enqueue_script('jquery');
+
+  wp_enqueue_style( 'prefix-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
 
   if(is_page('timeline')) {
     wp_enqueue_style( 'timeline-style', get_stylesheet_directory_uri().'/stylesheets/timeline.css' );
