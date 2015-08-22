@@ -7,4 +7,4 @@ javascripts_dir = 'js'
 relative_assets = true
 line_comments = false
 fonts_dir = '/fonts'
-output_style = :compressed
+output_style = :nested

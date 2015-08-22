@@ -6,6 +6,11 @@ module.exports = function (grunt) {
         options: {
           config: 'config.rb'
         }
+      },
+      dist: {
+        options: {
+          config: 'config-dist.rb'
+        }
       }
     },
     concat: {
@@ -20,6 +25,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['compass', 'concat']);
+  grunt.registerTask('default', ['compass:dev', 'concat']);
+  grunt.registerTask('dist', ['compass:dist', 'concat']);
 
 }
