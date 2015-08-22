@@ -2,8 +2,8 @@
   $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/ifoi-tracker.json');
 ?>
 <script>
-  //var feed = 'http://i-foi.org/feed/?cat=2';
-  var feed = <?php echo $_file?>;
+  var feed = 'http://i-foi.org/feed/?cat=2';
+  /*var feed = <?php echo $_file?>;*/
 </script>
  <script>
   "use strict"
@@ -525,8 +525,8 @@
       };
 
       function feed_success(obj) {
-        //var tracker_json = $.xml2json(obj).channel.item;
-        var tracker_json = obj.channel.item;
+        var tracker_json = $.xml2json(obj).channel.item;
+        //var tracker_json = obj.channel.item;
         // console.log($.xml2json(obj));
 
         console.log(tracker_json);
@@ -544,14 +544,14 @@
         });
       }
 
-      feed_success(feed);
+      //feed_success(feed);
 
-      /*    $.ajax({
+      $.ajax({
       url: feed,
       timeout: 2000,
       success: feed_success
 
-    });*/
+    });
 
     });
   })(jQuery)
