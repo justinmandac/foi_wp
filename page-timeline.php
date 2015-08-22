@@ -32,9 +32,7 @@
     <div class="container">
       <div class="congress-selector-wrapper"></div>
       <div class="heading-group">
-        <h1>FOI</h1>
-        <h1>Legislative Campaign</h1>
-        <h1>Timeline</h1>
+         <h1>Legislative Campaign</h1>
       </div>
     </div>
   </section>
