@@ -28,6 +28,12 @@
       width: 42%;
     }
 
+    @include bp(small) {
+      .heading-group h1 {
+	    font-size: 6rem;
+      }
+    }
+
 .timeline-section {
   position: relative;
   padding-top: 4%;
@@ -228,7 +234,9 @@
 }
 
 @include bp(small) {
-  
+  .timeline-section {
+    overflow: hidden;
+  }
   .congress-heading.fixed {
 	top:34px;
   }
