@@ -519,20 +519,16 @@ function renderContent(data, opts ) {
     };
 
     var triggers = document.getElementsByClassName('timeline-trigger');
-    console.log(triggers.length);
 
     function feed_success(obj) {
       var tracker_json = $.xml2json(obj).channel.item;
       //var tracker_json = obj.channel.item;
-      // console.log($.xml2json(obj));
 
-      console.log(tracker_json);
 
       var data = mergeSimilarModels(predef.concat(buildModel(tracker_json)).sort(sortByDate));
 
       var indices = renderTimeline(timeline_opts, data, render_opts);
       var first_index = indices[0];
-      console.log(data[first_index]);
 
       renderContent(data[first_index], render_opts);
 
