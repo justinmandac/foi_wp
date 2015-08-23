@@ -7,8 +7,8 @@ function register_main_menu() {
 add_action( 'init', 'register_main_menu' );
 
 function load_scripts() {
-
-  wp_enqueue_script('cdn-jquery', 'https://code.jquery.com/jquery-2.1.4.min.js','','2.1.4',true);
+  wp_deregister_script('jquery');
+  wp_enqueue_script('cdn-jquery', 'https://code.jquery.com/jquery-2.1.4.min.js','','2.1.4',false);
   wp_enqueue_style( 'prefix-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
 
   if(is_page('timeline')) {
