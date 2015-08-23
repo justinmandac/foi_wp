@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <header class="tracker-header-wrapper" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/hor_1600.jpg')">
+  <div class="help-trigger" id="help-trigger"><h4><i class="fa fa-question-circle"></i></h4></div>
   <div class="header-inner container">
+
     <h1>Congress Action on F<i class="fa fa-tachometer"></i>I Tracker</h1>
 
     <div class="header-buttons">
@@ -8,20 +10,24 @@
         <a href="#" class="button button--transparent timeline-trigger ">
           <span class="open-message"><i class="fa fa-clock-o"></i>Show Timeline</span>
           <span class="close-message"><i class="fa fa-clock-o"></i>Hide Timeline</span>
-
         </a>
       </div>
     </div>
 
   </div>
 </header>
+
 <div class="sidebar-wrapper" id="sidr">
+
   <h4 class="timeline-title">Timeline</h4>
+
   <div class="timeline-wrapper" id="timeline-wrapper">
      <div class="timeline-line"></div>
     <ul class="timeline" id="timeline"></ul>
   </div>
+
 </div>
+
 <div class="outer-wrapper container">
   <div class="content-wrapper">
     <div class="content" id="content">

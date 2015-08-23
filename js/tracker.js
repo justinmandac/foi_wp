@@ -121,7 +121,6 @@ var predef = [
 ];
 
 var tools = {};
-
 (function (context) {
   "use strict";
   var timeline_options = {},
@@ -227,7 +226,6 @@ var tools = {};
   context.init = function (timeline_opts, render_opts) {
     timeline_options = timeline_opts;
     render_options =   render_opts;
-
   };
   /* PRIVATE FUNCTIONS */
   /*
@@ -514,7 +512,6 @@ var tools = {};
 
 })(tools);
 
-
 (function ($) {
   "use strict";
   $(function () {
@@ -536,10 +533,69 @@ var tools = {};
     function feed_success(obj) {
       var tracker_json = $.xml2json(obj).channel.item,
         data = tools.mergeSimilarModels(predef.concat(tools.buildModel(tracker_json))),
-        indices = tools.renderTimeline(data),
-        first_index = indices[0];
+        indices = tools.renderTimeline(data), //get the indices of tracker entries
+        first_index = indices[0],
+        tour = {
+            id: "tracker-intro",
+            steps: [
+              {
+                title: "Displaying the Timeline",
+                content: "Click/tap on the trigger to toggle the timeline",
+                target: document.getElementsByClassName('timeline-trigger')[0],
+                placement: "bottom",
+                nextOnTargetClick: true
+              },
+              {
+                title: "Timeline Items",
+                content: "Red items show deadlines that Congress need to meet. Gray items show that a Congress Action on  FOI Tracker is available.",
+                target: document.getElementsByClassName('point')[2],
+                placement: "right",
+                showPrevButton: true,
+                nextOnTargetClick: true,
+                onShow: function () {
+                  jQuery.sidr('open', 'sidr');
+                },
+                onNext: function () {
+                  jQuery.sidr('close', 'sidr');
+                },
+                xOffset: '120%',
+                yOffset: '100%'
+              }, {
+                title: "Guide to the Meter",
+                content: "Details regarding the available progress evaluation will be shown here. <ul><li>Green Zone - good performance</li><li>Yellow zone - performance needs to improve, but outlook on the bill is still optimistic </li><li>Red zone - bad performance with pessimistic prognosis on the bill</li><li>Black zone - Congress is evidently out to kill the FOI bill</li></ul>"+"",
+                target: 'chart-container',
+                showPrevButton: true,
+                placement: "left",
+                nextOnTargetClick: true,
+                xOffset: "320px"
+              }, {
+                title: "Congress Action on FOI Tracker Details",
+                content: "Click \"Read More\" for the full evaluation and to join the discussion.",
+                target: 'read-more-button',
+                showPrevButton: true,
+                placement: "top",
+                nextOnTargetClick: true,
+                yOffset: "10%"
+              },
+              {
+                title: "Need help?",
+                content: "Click here to restart the tour.",
+                target: 'help-trigger',
+                showPrevButton: true,
+                placement: "left",
+                yOffset: "30%"
+              }
+            ]
+          },
+        visited = false;
 
-      tools.renderContent(data[first_index]);
+      if (document.cookie.match(/tracker-visited/g) !== null) {
+        visited = true;
+      }
+      else {
+        document.cookie = 'tracker-visited=true';
+      }
+
 
       $('.timeline-trigger').sidr({
         displace: false,
@@ -557,6 +613,19 @@ var tools = {};
 
         }
       });
+
+      $('#help-trigger').click(function (){
+        hopscotch.endTour(true);
+        hopscotch.startTour(tour);
+      });
+
+      if(!visited) {
+        //hopscotch.endTour(true);
+        hopscotch.startTour(tour);
+      }
+
+      tools.renderContent(data[first_index]);
+
     }
 
     $.ajax({
