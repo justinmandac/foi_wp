@@ -13,12 +13,6 @@
     
       $timeline_menu.detach();
 
-    //console.log($heading_height);
-    
-    console.log($_16th_arr);
-    
-    //console.log($timeline_markers);
-
     
     $.each($menu_model, function (key, val){
 

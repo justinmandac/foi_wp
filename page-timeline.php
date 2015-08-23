@@ -1,24 +1,41 @@
 <?php get_header(); ?>
 
 <?php
-  
-?>
+  $query = $_SERVER['QUERY_STRING'];
 
-<?php 
-  $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/16th-congress.json');
-  $_json = json_decode($_file, true);
+  $_file = null;
+  $_error = false;
+  
+  $_master_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/jsonfiles.json');
+
+  function noFileHandler($errno, $errstring) {
+    $_error = true;
+  }
+
+  set_error_handler("noFileHandler");
+  /*
+      query format: <domain>/timeline?f=<filename>.json
+      Default to 16th Congress JSON if no query string has been specified
+      else, parse query string for filename
+    */
+
+  if(strlen($query) == 0) {
+     $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/16thCongress.json');
+  } else {
+    $exploded =  explode('=', $query);
+    $_file = file_get_contents(get_stylesheet_directory_uri().'/inc/json/'.$exploded[1]);
+  }
+
+  //$_master_json = json_decode($_master_file, true);
+  $_json        = json_decode($_file, true);
+  $_list        = json_decode($_master_file, true);
 
   $_congress  = $_json['congress'].' Congress';
 
   $_years =  $_json['Years'];
   $direction = ['left','right'];
   $dflag = 0;
-?>
-  <script>
-  var $_16th_arr = <?php echo $_file; ?>;
-</script>
 
-<?php
   //set feature image as intro section BG
   $_id = $post->ID;
   if(has_post_thumbnail($_id)):
@@ -26,6 +43,15 @@
   endif;
 
 ?>
+
+<script>
+  var $_master_arr = "<?php print_r($_list) ?>";
+
+  console.log($_master_arr);
+
+</script>
+
+
 <div class="timeline-container">
  
   <section class="intro-section" style="background-image:url('<?php echo $image[0]?>')">
@@ -40,6 +66,15 @@
   <div id="sidr">
     <div class="menu-container">
       <div class="timeline-menu-header"></div>
+      <ul class="selector">
+
+          <?php foreach($_list['files'] as $file):?>
+          <li>
+            <a href="<?php echo the_permalink().'?f='.$file['file']; ?>"><span><?php echo $file['title']; ?></span>     </a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
       <ul class="timeline-menu" id="timeline-menu"></ul>
     </div>
   </div>
@@ -47,7 +82,7 @@
       <div class="congress-heading">
         <div class="inner">
           <div class="heading">
-            <h1><?php echo $_congress; ?></h1>
+              <h1><?php echo $_congress; ?></h1>
           </div>
           <div class="menu-trigger-container">
             <div id="menu-trigger" class="menu-trigger">
@@ -121,9 +156,7 @@
                   </div>
                 </li>
             
-            <?php endforeach;
-              
-            ?>  
+            <?php endforeach;?>
           </ul>
           <?php endforeach; ?>
 
