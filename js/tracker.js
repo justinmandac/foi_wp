@@ -1,107 +1,9 @@
-"use strict"
 var feed = 'http://i-foi.org/feed/?cat=2';
-var gaugeOptions = {
-
-  chart: {
-    type: 'gauge',
-    plotBackgroundColor: null,
-    plotBackgroundImage: null,
-    plotBorderWidth: 0,
-    plotShadow: false,
-    animation: {
-      duration: 1200
-    }
-  },
-
-  title: null,
-
-  credits: {
-    enabled: false
-  },
-  style: {
-    fontFamily: 'Ovo'
-  },
-  pane: {
-    center: ['50%', '85%'],
-    size: '130%',
-    startAngle: -90,
-    endAngle: 90,
-    background: [ {
-      backgroundColor: '#FFF',
-      borderWidth: 0,
-      outerRadius: '105%',
-      innerRadius: '103%'
-    }]
-  },
-
-  tooltip: {
-    enabled: false
-  },
-
-  // the value axis
-  yAxis: {
-    min: 0,
-    max: 100,
-
-    minorTickInterval: 'auto',
-    minorTickWidth: 1,
-    minorTickLength: 5,
-    minorTickPosition: 'inside',
-    minorTickColor: '#',
-
-    tickPixelInterval: 30,
-    tickWidth: 2,
-    tickPosition: 'inside',
-    tickLength: 5,
-    tickColor: '#666',
-    labels: {
-      step: 1,
-      rotation: 'auto'
-    },
-    title: {
-      text: 'Performance Score'
-    },
-    plotBands: [{
-      thickness: '12%',
-      from: 0,
-      to: 25,
-      color: '#000000' // red
-    },{
-      thickness: '12%',
-      from: 25,
-      to: 50,
-      color: '#B22222' // red
-    }, {
-      thickness: '12%',
-      from: 50,
-      to: 75,
-      color: '#DDDF0D' // yellow
-    }, {
-      thickness: '12%',
-      from: 75,
-      to: 100,
-      color: '#55BF3B' // green
-    }]
-  },
-
-  plotOptions: {
-    gauge: {
-      dataLabels: {
-        y: 5    ,
-        borderWidth: 3,
-        useHTML: true
-      },
-      dial : {
-        radius: '90%'
-      }
-    }
-  }
-};
 var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('05-04-2015','MM-DD-YYYY'),
+    date: moment('05-04-2015', 'MM-DD-YYYY'),
     date_flag: false,
     rating: null,
     sig: 'Resumption of Session',
@@ -128,7 +30,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('07-27-2015','MM-DD-YYYY'),
+    date: moment('07-27-2015', 'MM-DD-YYYY'),
     date_flag: false,
     rating: null,
     sig: 'Start of Third Regular Session of Congress',
@@ -141,7 +43,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('09-30-2015','MM-DD-YYYY'),
+    date: moment('09-30-2015', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -154,7 +56,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('10-31-2015','MM-DD-YYYY'),
+    date: moment('10-31-2015', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -167,7 +69,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('11-30-2015','MM-DD-YYYY'),
+    date: moment('11-30-2015', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -180,7 +82,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('12-31-2015','MM-DD-YYYY'),
+    date: moment('12-31-2015', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -193,7 +95,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('01-31-2016','MM-DD-YYYY'),
+    date: moment('01-31-2016', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -206,7 +108,7 @@ var predef = [
   {
     type: 'sig',
     title: null,
-    date: moment('02-29-2016','MM-DD-YYYY'),
+    date: moment('02-29-2016', 'MM-DD-YYYY'),
     date_flag: true,
     rating: null,
     sig: 'none',
@@ -220,16 +122,113 @@ var predef = [
 
 var tools = {};
 
-(function(context){
+(function (context) {
+  "use strict";
+  var timeline_options = {},
+    render_options = {},
+    gaugeOptions = {
 
-  var timeline_options = {};
-  var render_options = {};
+      chart: {
+        type: 'gauge',
+        plotBackgroundColor: null,
+        plotBackgroundImage: null,
+        plotBorderWidth: 0,
+        plotShadow: false,
+        animation: {
+          duration: 1200
+        }
+      },
 
-  context.init = function(timeline_opts, render_opts) {
+      title: null,
+
+      credits: {
+        enabled: false
+      },
+      style: {
+        fontFamily: 'Ovo'
+      },
+      pane: {
+        center: ['50%', '85%'],
+        size: '130%',
+        startAngle: -90,
+        endAngle: 90,
+        background: [ {
+          backgroundColor: '#FFF',
+          borderWidth: 0,
+          outerRadius: '105%',
+          innerRadius: '103%'
+        }]
+      },
+
+      tooltip: {
+        enabled: false
+      },
+
+    // the value axis
+      yAxis: {
+        min: 0,
+        max: 100,
+
+        minorTickInterval: 'auto',
+        minorTickWidth: 1,
+        minorTickLength: 5,
+        minorTickPosition: 'inside',
+        minorTickColor: '#',
+
+        tickPixelInterval: 30,
+        tickWidth: 2,
+        tickPosition: 'inside',
+        tickLength: 5,
+        tickColor: '#666',
+        labels: {
+          step: 1,
+          rotation: 'auto'
+        },
+        title: {
+          text: 'Performance Score'
+        },
+        plotBands: [{
+          thickness: '12%',
+          from: 0,
+          to: 25,
+          color: '#000000' // red
+        }, {
+          thickness: '12%',
+          from: 25,
+          to: 50,
+          color: '#B22222' // red
+        }, {
+          thickness: '12%',
+          from: 50,
+          to: 75,
+          color: '#DDDF0D' // yellow
+        }, {
+          thickness: '12%',
+          from: 75,
+          to: 100,
+          color: '#55BF3B' // green
+        }]
+      },
+
+      plotOptions: {
+        gauge: {
+          dataLabels: {
+            y: 5,
+            borderWidth: 3,
+            useHTML: true
+          },
+          dial : {
+            radius: '90%'
+          }
+        }
+      }
+    };
+
+  context.init = function (timeline_opts, render_opts) {
     timeline_options = timeline_opts;
     render_options =   render_opts;
 
-  }
+  };
   /* PRIVATE FUNCTIONS */
   /*
     Merges 'significant data' ie. congress deadlines with entry blocks with coincinding dates
@@ -241,22 +240,21 @@ var tools = {};
     sig.title   = ent.title;
 
     return sig;
-  };
+  }
 
   function sortByDate(a, b) {
-    var aDate = a.date;
-    var bDate = b.date;
-    return (moment(aDate).isBefore(bDate)) ? -1 : (moment(aDate).isAfter(bDate) ? 1: 0);
-  };
+    var aDate = a.date,
+      bDate = b.date;
+    return (moment(aDate).isBefore(bDate)) ? -1 : (moment(aDate).isAfter(bDate) ? 1 : 0);
+  }
 
   function renderSigBlock(text) {
     //stuff to be re used
-    var excon  = document.createElement('i');
-    //create sig-block
-    var sig_block     = document.createElement('div');
-    var sig_icon_div  = document.createElement('div');
-    var sig_text_div  = document.createElement('div');
-    var sig_text      = document.createElement('p');
+    var excon  = document.createElement('i'),
+      sig_block     = document.createElement('div'),
+      sig_icon_div  = document.createElement('div'),
+      sig_text_div  = document.createElement('div'),
+      sig_text      = document.createElement('p');
 
     sig_block.className = 'sig-block';
 
@@ -272,17 +270,14 @@ var tools = {};
     sig_block.appendChild(sig_text_div);
 
     return sig_block;
-  };
+  }
 
   function renderPostBlock(title, index) {
-    //stuff to be re used
-    'use strict'
-    var eyecon = document.createElement('i');
-
-    var post_block = document.createElement('div');
-    var post_icon_div = document.createElement('div');
-    var post_text_div = document.createElement('div');
-    var post_text     = document.createElement('p');
+    var eyecon = document.createElement('i'),
+      post_block = document.createElement('div'),
+      post_icon_div = document.createElement('div'),
+      post_text_div = document.createElement('div'),
+      post_text     = document.createElement('p');
 
     post_block.className = 'post-block';
     post_block.setAttribute('data-index', index);
@@ -297,31 +292,32 @@ var tools = {};
     post_block.appendChild(post_icon_div);
     post_block.appendChild(post_text_div);
 
-
     return post_block;
-  };
+  }
 
   /*PUBLIC FUNCTIONS*/
 
-  context.buildModel = function(data) {
-    "use strict"
+  context.buildModel = function (data) {
     var arr = [];
 
-    data.forEach(function(val) {
-      var title = val.title;
-      var guid  = val.link;
-      var html  = document.createElement('div');
-      html.innerHTML = val.encoded;
-      var attr = html.lastElementChild;
-      var content = html.children[0];
-      var guid = val.link;
+    data.forEach(function (val) {
+      var title = val.title,
+        html  = document.createElement('div'),
+        attr = null,
+        content = null,
+        guid = val.link,
+        post = {};
 
-      var post = {
+      html.innerHTML = val.encoded;
+      attr = html.lastElementChild;
+      content = html.children[0];
+
+      post = {
         type: 'ent',
         title: title,
         date: moment(attr.children[0].innerHTML, 'MM-DD-YYYY'),
         date_flag: null,
-        rating: parseInt(attr.children[1].innerHTML),
+        rating: parseInt(attr.children[1].innerHTML, 10),
         sig: null,
         subs: null,
         content: content,
@@ -336,68 +332,63 @@ var tools = {};
     return arr;
   };
 
-  context.mergeSimilarModels = function(data) {
-    var merge = [];
+  context.mergeSimilarModels = function (data) {
+    var merge = [],
+      bef     = null,
+      aft     = null,
+      last    = null;
 
     //SORT HERE
     data.sort(sortByDate);
 
-    while(data.length > 0) {
-      var bef = data.pop();
-      var aft = data.pop();
+    while (data.length > 0) {
+      bef = data.pop();
+      aft = data.pop();
 
-      if(data.length == 3) {
+      if (data.length === 3) {
         //special case for even numbered arrays
-        var last = data.pop();
+        last = data.pop();
 
-        if(bef.type == aft.type) {
-          if( aft.type == last.type) {
+        if (bef.type === aft.type) {
+          if (aft.type === last.type) {
             //no merging for similar items
             merge.push(bef);
             merge.push(aft);
             merge.push(last);
-          }
-          else {
+          } else {
             //since they're all sorted in order and only two similar dates may exist,
             //bef will never be equal to last in terms of date
-            if(aft.date._i == last.date._i) {
-              bef.type == 'sig'?  merge.push(mergeSigEnt(aft,last)) : merge.push(mergeSigEnt(last,aft));
-            }
-            else { //unequal dates, push
+            if (aft.date._i === last.date._i) {
+              bef.type === 'sig' ?  merge.push(mergeSigEnt(aft, last)) : merge.push(mergeSigEnt(last, aft));
+            } else { //unequal dates, push
               merge.push(aft);
               merge.push(last);
             }
           }
-        }
-        else {
+        } else {
           //if bef == aft, bef can never be equal to last. check if bef should be merged
           //with aft
-          if(bef.type == aft.type) { //similar types cannot be merged. push
+          if (bef.type === aft.type) { //similar types cannot be merged. push
             merge.push(bef);
             merge.push(aft);
-          }
-          else {
-            if(bef.date._i == aft.date._i) {
-              bef.type == 'sig'?  merge.push(mergeSigEnt(bef,aft)) : merge.push(mergeSigEnt(aft,bef));
-            }
-            else { //unequal dates, push
+          } else {
+            if (bef.date._i === aft.date._i) {
+              bef.type === 'sig' ?  merge.push(mergeSigEnt(bef, aft)) : merge.push(mergeSigEnt(aft, bef));
+            } else { //unequal dates, push
               merge.push(bef);
               merge.push(aft);
             }
           }
           merge.push(last);
         }
-      }
-      else {
-        if(bef.type == aft.type) { //similar types cannot be merged. push
+      } else {
+        if (bef.type === aft.type) { //similar types cannot be merged. push
           merge.push(bef);
           merge.push(aft);
-        }
-        else {
-          if(bef.date._i == aft.date._i) {
-            bef.type == 'sig'?  merge.push(mergeSigEnt(bef,aft)) : merge.push(mergeSigEnt(aft,bef));
-          }
-          else { //unequal dates, push
+        } else {
+          if (bef.date._i === aft.date._i) {
+            bef.type === 'sig' ?  merge.push(mergeSigEnt(bef, aft)) : merge.push(mergeSigEnt(aft, bef));
+          } else { //unequal dates, push
             merge.push(bef);
             merge.push(aft);
           }
@@ -408,59 +399,61 @@ var tools = {};
     return merge;
   };
 
-  context.renderTimeline = function(data) {
+  context.renderTimeline = function (data) {
 
-    var target = timeline_options.wrapper.removeChild(timeline_options.target);
-    var indices = [];
-    var tracker_count = 0;
+    var target              = timeline_options.wrapper.removeChild(timeline_options.target),
+      indices               = [],
+      tracker_count         = 0,
+      li                    = null,
+      heading_text          = null,
+      item_content_template = '',
+      point_content         = null,
+      subs                  = null;
 
-    data.forEach(function(val){
-      var li = document.createElement('li');
-      var heading_text = document.createElement('h5');
-      var item_content_template = '';
-      var point_content = document.createElement('div');
+    data.forEach(function (val) {
+      li                    = document.createElement('li');
+      heading_text          = document.createElement('h5');
+      item_content_template = '';
+      point_content         = document.createElement('div');
 
-      li.className+='point ';
-      point_content.className+='point-content ';
-      heading_text.className+='point-title ';
-      if(val.type == 'sig') {
+      li.className += 'point ';
+      point_content.className += 'point-content ';
+      heading_text.className  += 'point-title ';
 
-        li.className+='sig ';
+      if (val.type === 'sig') {
+
+        li.className += 'sig ';
 
         heading_text.appendChild(document.createTextNode('! '));
-        if(val.date_flag) {
+        if (val.date_flag) {
           heading_text.appendChild(document.createTextNode(val.date.format('MMM YYYY')));
-        }
-        else { //render full date ie mm-dd
+        } else { //render full date ie mm-dd
           heading_text.appendChild(document.createTextNode(val.date.format('MMM DD, YYYY')));
-
         }
 
-        if(val.sig !== 'none') {
-          heading_text.appendChild(document.createTextNode(':'+val.sig));
+        if (val.sig !== 'none') {
+          heading_text.appendChild(document.createTextNode(':' + val.sig));
         }
 
-        var subs = val.subs;
+        subs = val.subs;
 
-        subs.forEach(function(sub_items) {
+        subs.forEach(function (sub_items) {
           point_content.appendChild(renderSigBlock(sub_items));
         });
 
-      }
-      else {
+      } else {
 
         indices.push(tracker_count);
 
         heading_text.appendChild(document.createTextNode(val.date.format('MMM DD')));
 
-        li.onclick = function() {
+        li.onclick = function () {
           context.renderContent(val);
         };
 
         point_content.appendChild(renderPostBlock(val.title, tracker_count));
-
-
       }
+
       tracker_count++;
       li.appendChild(heading_text);
       li.appendChild(point_content);
@@ -473,11 +466,11 @@ var tools = {};
     return indices;
   };
 
-  context.renderContent = function(data) {
-    var date  = document.createElement('h4');
-    var title = document.createElement('h3');
-    var guid = document.createElement('a');
-    var cont_link = document.createElement('a');
+  context.renderContent = function (data) {
+    var date  = document.createElement('h4'),
+      title = document.createElement('h3'),
+      guid = document.createElement('a'),
+      cont_link = document.createElement('a');
     //build upper title block
     date.appendChild(document.createTextNode(data.date.format('MMMM DD, YYYY')));
 
@@ -507,7 +500,7 @@ var tools = {};
         data: [parseInt(data.rating)],
         dataLabels: {
           format: '<div style="text-align:center"><span style="font-size:25px;color:' +
-          ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>'
+            ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>'
         },
         tooltip: {
           valueSuffix: null
@@ -522,46 +515,43 @@ var tools = {};
 })(tools);
 
 
-(function($) {
-  $(function(){
-
-    var merge = [];
+(function ($) {
+  "use strict";
+  $(function () {
     var timeline_opts   = {
       wrapper   : document.getElementById('timeline-wrapper'),
       target    : document.getElementById('timeline')
-    };
-    var render_opts = {
-      title: document.getElementById('post-title'),
-      info: document.getElementById('post-content'),
-      gauge: $('#chart-container'),
-      readmore: document.getElementById('read-more-button'),
-      loader: document.getElementById('loader')
-    };
-
-    var triggers = document.getElementsByClassName('timeline-trigger');
+    },
+      render_opts = {
+        title   : document.getElementById('post-title'),
+        info    : document.getElementById('post-content'),
+        gauge   : $('#chart-container'),
+        readmore: document.getElementById('read-more-button'),
+        loader  : document.getElementById('loader')
+      },
+      triggers = document.getElementsByClassName('timeline-trigger');
 
     tools.init(timeline_opts, render_opts);
 
-
     function feed_success(obj) {
-      var tracker_json = $.xml2json(obj).channel.item;
-
-      var data = tools.mergeSimilarModels(predef.concat(tools.buildModel(tracker_json)));
-
-      var indices = tools.renderTimeline(data);
-      var first_index = indices[0];
+      var tracker_json = $.xml2json(obj).channel.item,
+        data = tools.mergeSimilarModels(predef.concat(tools.buildModel(tracker_json))),
+        indices = tools.renderTimeline(data),
+        first_index = indices[0];
 
       tools.renderContent(data[first_index]);
 
       $('.timeline-trigger').sidr({
         displace: false,
         onOpen: function () {
-           for(var x = 0 ; x < triggers.length; x++) {
-             triggers[x].className+='sidr-open';
-           }
+          var x;
+          for (x = 0; x < triggers.length; x++) {
+            triggers[x].className += 'sidr-open';
+          }
         },
-        onClose: function() {
-          for(var x = 0 ; x < triggers.length; x++) {
+        onClose: function () {
+          var x;
+          for (x = 0; x < triggers.length; x++) {
             triggers[x].className = triggers[x].className.replace(/sidr-open/g, '');
           }
 
@@ -573,8 +563,7 @@ var tools = {};
       url: feed,
       timeout: 2000,
       success: feed_success
-
     });
 
   });
-})(jQuery)
+})(jQuery);
