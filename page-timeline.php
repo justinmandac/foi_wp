@@ -96,13 +96,10 @@
       </div>
      
       <ul class="timeline-events" id="timeline-events">
-        <?php 
-          $timeline_navi = array();
-
+        <?php
           //TIMELINE MAIN LOOP
           foreach($_years as $ykey => $year):
             $curr_year = $year['year'];
-           
           ?>
         <li class="timeline-year-container" data-year="<?php echo $curr_year?>">
 
@@ -117,36 +114,35 @@
               $new_month = true;
               foreach($month['Days'] as $dkey => $day):
                 $curr_day = $day['day'];
-        ?>
-        <?php if($new_month) :
-          $marker_id = 'marker-'.$curr_year.'-'.strtolower($curr_month);
-          $marker_text = $curr_month.' '.$curr_year;
-        ?>
-             <li class="timeline-item marker" id="<?php echo $marker_id; ?>" data-text="<?php echo $marker_text?>" >
-            <h2>
-              <?php echo $marker_text; $new_month = false;?>
-            </h2>
-          </li>
-        <?php endif;?>
-             <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" >
-                  <div class="date-block">
-                    <div class="date-container">
-                      <span class="date-text"><?php echo $curr_month.' '.$curr_day.', '.$curr_year?></span>
-                    </div>
-                  </div>
-                  <div class="dot-block">
-                    <div class="dot"></div>
-                  </div>
-                  <div class="content-block">
-                    <div class="content-inner">
-                      <div class="content">
-                        <?php echo $day['activity'] ?>
-                      </div>
-                      <div class="arrow"></div>
-                    </div>
-                  </div>
+            ?>
+              <?php if($new_month) :
+                $marker_id = 'marker-'.$curr_year.'-'.strtolower($curr_month);
+                $marker_text = $curr_month.' '.$curr_year;
+              ?>
+                <li class="timeline-item marker" id="<?php echo $marker_id; ?>" data-text="<?php echo $marker_text?>" >
+                  <h2>
+                    <?php echo $marker_text; $new_month = false;?>
+                  </h2>
                 </li>
-            
+              <?php endif;?>
+               <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" >
+                    <div class="date-block">
+                      <div class="date-container">
+                        <span class="date-text"><?php echo $curr_month.' '.$curr_day.', '.$curr_year?></span>
+                      </div>
+                    </div>
+                    <div class="dot-block">
+                      <div class="dot"></div>
+                    </div>
+                    <div class="content-block">
+                      <div class="content-inner">
+                        <div class="content">
+                          <?php echo $day['activity'] ?>
+                        </div>
+                        <div class="arrow"></div>
+                      </div>
+                    </div>
+                  </li>
             <?php endforeach;?>
           </ul>
           <?php endforeach; ?>

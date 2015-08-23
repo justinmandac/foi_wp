@@ -39,7 +39,7 @@ html {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 768px), screen and (min-width: 320px) and (max-width: 768px) {
   .heading-group h1 {
-    font-size: 6rem; } }
+    font-size: 5rem; } }
 .timeline-section {
   position: relative;
   padding-top: 4%; }
