@@ -165,6 +165,10 @@
 	margin-right: 5px;
 }
 
+.timeline-trigger.sidr-open {
+	background-color: $accent-color;
+	color: #fff;
+}
 .timeline-trigger.sidr-open .close-message {
 	display: inline-block;
 }

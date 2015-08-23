@@ -200,6 +200,10 @@ html {
 .button .fa {
   margin-right: 5px; }
 
+.timeline-trigger.sidr-open {
+  background-color: #cc3333;
+  color: #fff; }
+
 .timeline-trigger.sidr-open .close-message {
   display: inline-block; }
 
