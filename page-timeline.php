@@ -131,7 +131,7 @@
              <li class="timeline-item <?php echo $direction[($dflag = !$dflag)];?>" >
                   <div class="date-block">
                     <div class="date-container">
-                      <?php echo $curr_month.' '.$curr_day.', '.$curr_year?>
+                      <span class="date-text"><?php echo $curr_month.' '.$curr_day.', '.$curr_year?></span>
                     </div>
                   </div>
                   <div class="dot-block">
