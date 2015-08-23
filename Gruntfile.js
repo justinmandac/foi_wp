@@ -15,8 +15,11 @@ module.exports = function (grunt) {
     },
     concat: {
       dist: {
-        src: ['info.css', 'stylesheets/main.css'],
-        dest: 'style.css'
+        files: {
+          'style.css' : ['info.css', 'stylesheets/main.css'],
+          'stylesheets/tracker-styles.css': ['stylesheets/hopscotch.min.css','stylesheets/jquery.sidr.light.css','stylesheets/tracker.css']
+
+        }
       }
     }
 
