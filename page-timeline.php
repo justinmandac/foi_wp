@@ -43,15 +43,6 @@
   endif;
 
 ?>
-
-<script>
-  var $_master_arr = "<?php print_r($_list) ?>";
-
-  console.log($_master_arr);
-
-</script>
-
-
 <div class="timeline-container">
  
   <section class="intro-section" style="background-image:url('<?php echo $image[0]?>')">
