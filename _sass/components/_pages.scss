@@ -266,3 +266,97 @@ body.single-post .wp-caption {
   .category-performance-tracker .view-tracker .fa {
     margin-right: 5px;
   }
+
+.error404 {
+  color: #fff;
+}
+
+
+.error404 .footer-wrapper {
+  margin-top: 0px;
+}
+
+.message-404 {
+  font-size: 16rem;
+  line-height: 0.8;
+}
+
+.message-body {
+  margin-bottom: 0px;
+}
+
+.error404 .no-page-container {
+  padding-top: 2.5%;
+  min-height: 100vh;
+}
+
+.error404 .search-content-inner {
+  padding: 1% 0;
+  margin-top: 1%;
+  position: relative;
+}
+
+.error404 .search-form label {
+  padding: 2% 0;
+  background-color: rgba(255,255,255,.2);
+}
+
+.error404 input[type="search"] {
+  border: 0px;
+  background-color: rgba(255,255,255,0);
+  padding: 1% 0;
+  color: #fff;
+}
+
+.error404 input[type="search"]:focus {
+  outline: none;
+}
+
+.error404 button[type="submit"] {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0 2%;
+}
+
+.error404 .grid-wrapper {
+  margin-top: 23vh;
+  background-color: rgba(0,0,0,.2);
+  padding: 2%;
+}
+
+.grid {
+  @include outer-container;
+}
+
+.grid .left-block {
+  @include span-columns(4);
+}
+
+.grid .right-block {
+  @include span-columns(8);
+  @include omega;
+}
+
+.grid .full-block {
+  @include span-columns(12);
+}
+
+@include bp(small) {
+
+  .grid .left-block, .grid .right-block {
+    @include span-columns(12);
+    text-align: center;
+  }
+
+  .error404 .container {
+    @include outer-container(90%);
+  }
+
+  .error404 .search-form label{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+
+}
+}

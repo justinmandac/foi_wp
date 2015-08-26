@@ -208,7 +208,7 @@
     @include span-columns(2);
   }
 
-  .header-inner.expand .search-content {
+  .header-main .header-inner.expand .search-content {
     position: absolute;
     top: 100%;
     z-index: 998;
@@ -218,7 +218,7 @@
     margin: 0 auto;
   }
 
-  .header-inner .logo-wrapper .logo-content {
+  .header-main .header-inner .logo-wrapper .logo-content {
     margin: 0;;
     width: 90px;
     height: 25px;
@@ -291,7 +291,7 @@
     font-weight:bold;
   }
 
-  .search-content-inner .search-form {
+  .header-main .search-content-inner .search-form {
     position: absolute;
     top: 32px;
     z-index: 1000;
@@ -300,7 +300,7 @@
     width: 220px;
   }
 
-  .search-form .search-field {
+  .header-main .search-form .search-field {
     width: 90%;
   }
 }
